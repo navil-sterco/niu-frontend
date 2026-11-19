@@ -1,0 +1,14 @@
+.ld-notfound { padding-block: 12rem; text-align: center; background-color: var(--color_f7); }
+.ld-notfound__inner { max-width: 60rem; margin-inline: auto; padding-inline: 2rem; }
+.ld-notfound h1 { font: var(--font46); color: var(--color_46); margin-bottom: 1.6rem; }
+.ld-notfound p { font: var(--font18); color: var(--color_1f); font-weight: var(--font_normal); margin-bottom: 3rem; }
+.ld-notfound__btn {
+  display: inline-block;
+  font: var(--font18);
+  font-weight: var(--font_bold);
+  color: var(--color_20);
+  background-color: var(--color_42);
+  padding: 1rem 3rem;
+  text-decoration: none;
+}
+@media (max-width: 991px) { .ld-notfound { padding-block: 6rem; } }

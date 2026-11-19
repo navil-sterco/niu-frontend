@@ -1,0 +1,344 @@
+
+.alumni_wrap {
+    padding-block: 20rem;
+  }
+  .alumni_wrap .alum_grid {
+    display: grid;
+    grid-template-columns: 340fr 1623fr;
+    grid-gap: 2rem;
+  }
+  .alumni_wrap .alum_grid,
+  .alumni_wrap .alum_text,
+  .hmalumni .swiper-slide.is-expanded > figure,
+  .hmalumni .swiper-slide.is-expanded > figure > img,
+  .hmalumni .swiper-slide.is-expanded > figure > figcaption,
+  .hmalumni .swiper-slide.is-expanded,
+  .hmalumni .swiper-slide.is-expanded > figure::before {
+    height: 62rem;
+    overflow: hidden;
+  }
+  .alumni_wrap .alum_text {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+  }
+  .alumni_wrap .alum_head h5 {
+    font: var(--font18);
+    font-family: var(--dmsans);
+    color: var(--color_black);
+    font-weight: var(--font_600);
+  }
+  .alumni_wrap .alum_head blockquote {
+    margin-block: 2rem 2.4rem;
+  }
+  .alumni_wrap .alum_head blockquote span {
+    display: block;
+  }
+  .alumni_wrap .alum_head .load_more {
+    margin-inline: inherit;
+    margin-top: 3.1rem;
+  }
+  .alumni_wrap .alum_head .load_more:hover .line {
+    background: var(--color_62);
+  }
+  .alumni_wrap .alum_head .load_more:hover p {
+    color: var(--color_black);
+    border-color: var(--color_46);
+  }
+  .alumni_wrap .alum_head .load_more p {
+    border-color: var(--color_29);
+    color: var(--color_46);
+  }
+  .alumni_wrap .alum_head .load_more .line {
+    background: var(--color_29);
+  }
+  .alumni_wrap .counter_wrap {
+    margin-top: auto;
+  }
+  .alumni_wrap .counter_wrap .counter {
+    font: var(--font50);
+    letter-spacing: -0.15rem;
+    font-family: var(--dmsans);
+    font-weight: var(--font_medium);
+    color: var(--color_46);
+  }
+  .alumni_wrap .counter_wrap .counter sup {
+    font: var(--font28);
+    letter-spacing: -0.112rem;
+    font-family: var(--poppins);
+    font-weight: var(--font_normal);
+    color: var(--color_46);
+    top: -2.9rem;
+  }
+  .alumni_wrap .counter_wrap p,
+  .alumni_wrap .alum_head p {
+    font: var(--font16);
+    font-family: var(--dmsans);
+    color: var(--color_black);
+    font-weight: var(--font_normal);
+  }
+  
+  .alumni_wrap .alumni_slidewrap {
+    overflow: hidden;
+  }
+  .alumni_wrap .swiper-slide > figure {
+    width: 100%;
+    display: grid;
+    align-items: center;
+  }
+  .alumni_wrap .swiper-slide.is-expanded > figure {
+    background: radial-gradient(
+      circle at 50% 35%,
+      #edd46f 0%,
+      #cca540 50%,
+      #a68128 100%
+    );
+  }
+  .alumni_wrap .swiper-slide > figure > * {
+    grid-area: 1/1;
+  }
+  .hmalumni .swiper-slide.is-expanded > figure::before {
+    /* background: url(../images/alumni-bg.webp); */
+    width: 60rem;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
+    mix-blend-mode: overlay;
+    opacity: 0.51;
+  }
+  .alumni_wrap .swiper-slide > figure > img {
+    width: 60rem;
+    margin-left: auto;
+    object-position: right;
+    mix-blend-mode: overlay;
+    opacity: 0.51;
+  }
+  .hmalumni .swiper-slide.is-expanded > figure > img {
+    display: none;
+  }
+  .alumni_wrap .swiper-slide > figure > figcaption {
+    padding-inline: 7.1rem 6rem;
+    position: relative;
+    display: none;
+    transition: 0.5s all;
+  }
+  .alumni_wrap .swiper-slide.is-expanded > figure > figcaption {
+    display: block;
+    transition: 0.5s all;
+  }
+  
+  .alumni_wrap .capimg_grid {
+    display: grid;
+    grid-template-columns: 314fr 500fr;
+    grid-gap: 2.7rem;
+    height: 100%;
+  }
+  .alumni_wrap .capimg_grid figure {
+    height: 100%;
+  }
+  .alumni_wrap .capimg_grid figure > img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .alumni_wrap .studnt_info {
+    padding-block: 7.6rem 7.2rem;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+  }
+  .alumni_wrap .studnt_info > img {
+    max-width: 5.7rem;
+    margin-bottom: 4.6rem;
+  }
+  .alumni_wrap .studnt_info .name_deg {
+    margin-top: auto;
+  }
+  .alumni_wrap .studnt_info .name_deg h5 {
+    font: var(--font24);
+    font-family: var(--dmsans);
+    font-weight: var(--font_300);
+    color: var(--color_1f);
+    margin-bottom: 0.8rem;
+  }
+  .alumni_wrap .studnt_info ul {
+    display: flex;
+  }
+  .alumni_wrap .studnt_info ul li:not(:last-child) {
+    padding-right: 1rem;
+    margin-right: 1rem;
+    border-right: 0.1rem solid rgb(83 86 90 / 20%);
+  }
+  .alumni_wrap .studnt_info ul li {
+    font: var(--font18);
+    font-family: var(--dmsans);
+    font-weight: var(--font_bold);
+    color: var(--color_1f);
+    line-height: 1;
+  }
+  .alumni_wrap .studnt_info blockquote {
+    font: var(--font32);
+    letter-spacing: -0.064rem;
+    font-family: var(--dmsans);
+    font-weight: var(--font_300);
+    color: var(--color_1f);
+    line-height: 1.15;
+    transition: 0.5s all;
+  }
+  .alumni_wrap .video_icon {
+    position: absolute;
+    right: 4.2rem;
+    top: 3.8rem;
+    width: 4.3rem;
+    height: 4.3rem;
+  }
+  .alumni_wrap .alumni_detail {
+    padding: 2.2rem 0 0 2.9rem;
+  }
+  .alumni_slidewrap .alumni_detail {
+    display: block;
+  }
+  .alumni_slidewrap .swiper-slide.is-expanded .alumni_detail {
+    display: none;
+  }
+  .alumni_wrap .alumni_detail h5 {
+    font: var(--font24);
+    font-weight: var(--font_300);
+    color: var(--color_1f);
+    font-family: var(--dmsans);
+    margin-bottom: 0.8rem;
+  }
+  .alumni_wrap .alumni_detail p {
+    font: var(--font18);
+    font-weight: var(--font_bold);
+    color: var(--color_1f);
+    font-family: var(--dmsans);
+  }
+  .alumni_wrap .alumni_detail p span {
+    font-weight: var(--font_300);
+    margin-left: 1rem;
+    padding-left: 1rem;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  }
+  .alumni_wrap .alumni_detail p span::before {
+    position: absolute;
+    left: 0;
+    width: 0.1rem;
+    height: 1.5rem;
+    background: rgb(83 86 90 / 20%);
+    content: "";
+  }
+  /* Base slide style (inactive / default width) */
+  .hmalumni .swiper-slide {
+    width: 46rem;
+    transition: width 0.4s ease; /* Smooth transition when expanding */
+    box-sizing: border-box;
+  }
+  /* Active or clicked slide expanded width */
+  .hmalumni .swiper-slide.is-expanded {
+    width: 94rem;
+  }
+  
+  @media (max-width: 1750px) {
+    .alumni_wrap {
+      padding-block: 15rem 12rem;
+    }
+    .alumni_wrap .alum_head blockquote {
+      margin-block: 0.8rem;
+    }
+    .alumni_wrap .counter_wrap p,
+    .alumni_wrap .alum_head p {
+      font: var(--font14_new);
+    }
+    .alumni_wrap .alum_grid {
+      grid-gap: 1rem;
+    }
+    .hmalumni .swiper-slide.is-expanded {
+      width: 50.8rem;
+    }
+    .alumni_wrap .studnt_info {
+      padding-block: 4.2rem 3.8rem;
+    }
+    .alumni_wrap .swiper-slide > figure > figcaption {
+      padding-inline: 3.8rem 2.2rem;
+    }
+    .hmalumni .swiper-slide {
+      width: 25rem;
+    }
+    .alumni_wrap .alum_grid,
+    .alumni_wrap .alum_text,
+    .hmalumni .swiper-slide.is-expanded > figure,
+    .hmalumni .swiper-slide.is-expanded > figure > img,
+    .hmalumni .swiper-slide.is-expanded > figure > figcaption,
+    .hmalumni .swiper-slide.is-expanded,
+    .hmalumni .swiper-slide.is-expanded > figure::before,
+    .alumni_wrap .capimg_grid figure {
+      height: 33.5rem;
+      overflow: hidden;
+    }
+    .alumni_wrap .studnt_info > img {
+      max-width: 3rem;
+      margin-bottom: 2.5rem;
+    }
+    .alumni_wrap .capimg_grid {
+      grid-template-columns: 314fr 500fr;
+      grid-gap: 1.7rem;
+    }
+    .alumni_wrap .video_icon {
+      right: 1.6rem;
+      top: 2.3rem;
+      width: 3.6rem;
+      height: 3.6rem;
+    }
+    .hmalumni .swiper-slide.is-expanded > figure::before {
+      width: 31.1rem;
+      background-size: cover;
+      background-position: center;
+    }
+    .alumni_wrap .studnt_info .name_deg h5 {
+      margin-bottom: 0.4rem;
+    }
+    .alumni_wrap .studnt_info ul li:not(:last-child) {
+      padding-right: 0.5rem;
+      margin-right: 0.5rem;
+    }
+    .alumni_wrap .alumni_detail {
+      padding: 1.6rem 0 0 1.6rem;
+    }
+    .alumni_wrap .alumni_detail p span {
+      margin-left: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    .alumni_wrap .alum_head .load_more {
+      margin-top: 2.1rem;
+    }
+    .alumni_wrap .counter_wrap .counter sup {
+      top: -1.4rem;
+      margin-left: 0.1rem;
+      font-weight: var(--font_medium);
+    }
+    .alumni_wrap .alum_head .load_more .line {
+      background: var(--color_62);
+    }
+    .alumni_wrap .alum_head .load_more p {
+      border-color: var(--color_62);
+    }
+  } /*-----1750px-end----------*/
+  
+  @media (max-width: 1280px) {
+  } /*-----1280px-end----------*/
+  @media (max-width: 1199px) {
+  } /*-----1199px-end----------*/
+  @media (max-width: 991px) {
+  } /*-----991px-end----------*/
+  @media (max-width: 767px) {
+  } /*-----767px-end----------*/
+  @media (max-width: 575px) {
+  } /*-----575px-end----------*/
+  @media (max-width: 350px) {
+  } /*-----350px-end----------*/
+  /*----alumni_wrap-css-end----*/

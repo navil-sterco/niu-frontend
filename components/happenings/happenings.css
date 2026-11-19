@@ -1,0 +1,7 @@
+/* PASTE YOUR ORIGINAL happenings / news page CSS HERE (unchanged), then:
+
+   1) the PHP used the (invalid) <date> tag; React uses <time>. In your CSS replace every
+      selector that targets  date  with  time   e.g.  ".top_list date"  →  ".top_list time"
+      ".date date" → ".date time".
+   2) change any url(../images/…) to url(/images/…)  (images live in /public/images).
+*/

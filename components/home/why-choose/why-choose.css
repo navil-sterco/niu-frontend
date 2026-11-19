@@ -1,0 +1,169 @@
+
+.why_choose {
+    border-bottom: 0.1rem solid rgb(112 112 112 / 20%);
+    overflow: hidden;
+  }
+  .why_choose .why_inner {
+    position: relative;
+    z-index: 1;
+    padding-block: 10.5rem 12rem;
+    padding-left: 24rem;
+  }
+  .why_choose .why_inner::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: calc(100% - 27rem);
+    background: var(--color_42);
+    content: "";
+    z-index: -1;
+  }
+  .why_choose .title_24 {
+    color: var(--color_46);
+    margin-bottom: 6.3rem;
+  }
+  .why_choose .nav-tabs {
+    margin-bottom: 9.8rem;
+    border-bottom: 0.1rem solid rgb(55 113 71 / 14%);
+  }
+  .why_choose .nav-tabs .nav-link {
+    background: transparent;
+    border: none;
+    font: var(--font21);
+    font-family: var(--dmsans);
+    font-weight: var(--font_medium);
+    color: var(--color_1f);
+  }
+  .why_choose .nav-tabs li .nav-link {
+    padding-block: 1.8rem 1.9rem;
+    padding-inline: 0;
+  }
+  .why_choose .nav-tabs li:not(:last-child) {
+    margin-right: 6.6rem;
+  }
+  .why_choose .nav-tabs .nav-link.active {
+    background: var(--color_46);
+    font-weight: var(--font_600);
+    color: var(--color_white);
+    border-radius: 0;
+    padding: 1.8rem 8.5rem 1.9rem 5.2rem;
+  }
+  .why_choose .why_grid {
+    display: grid;
+    grid-template-columns: 758fr 1163fr;
+    grid-gap: 6.2rem;
+  }
+  .why_choose .why_text {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 6rem;
+  }
+  .why_choose .why_text .title_45 {
+    color: var(--color_1f);
+    margin-bottom: 4rem;
+  }
+  .why_choose .why_text .title_45 span {
+    display: block;
+    color: var(--color_46);
+  }
+  .why_choose .why_text p {
+    font: var(--font16);
+    color: var(--color_black);
+    font-family: var(--dmsans);
+    font-weight: var(--font_normal);
+    max-width: 56%;
+  }
+  .why_choose .why_text .load_more {
+    margin-inline: inherit;
+    margin-top: 4rem;
+  }
+  .why_choose .why_text .load_more p {
+    border-color: var(--color_29);
+    color: var(--color_46);
+  }
+  .why_choose .why_text .load_more .line {
+    background: var(--color_29);
+  }
+  .why_choose .why_text .load_more:hover .line {
+    background: var(--color_62);
+  }
+  .why_choose .why_text .load_more:hover p {
+    color: var(--color_black);
+    border-color: var(--color_46);
+  }
+  .why_choose .hychose_logo {
+    margin-top: auto;
+  }
+  .why_choose .hychose_logo figure {
+    background: var(--color_ef);
+  }
+  .why_choose .hychose_logo figure img {
+    mix-blend-mode: darken;
+  }
+  @media (max-width: 1750px) {
+    .why_choose .why_inner {
+      padding-left: 9.5rem;
+      padding-block: 5.6rem 8rem;
+    }
+    .why_choose .title_24 {
+      margin-bottom: 2.1rem;
+    }
+    .why_choose .nav-tabs li .nav-link {
+      padding-block: 0.7rem;
+    }
+    .why_choose .nav-tabs .nav-link.active {
+      padding: 0.7rem 2.3rem;
+    }
+    .why_choose .nav-tabs li:not(:last-child) {
+      margin-right: 3.1rem;
+    }
+    .why_choose .nav-tabs .nav-link {
+      font: var(--font14_new);
+    }
+    .why_choose .nav-tabs {
+      margin-bottom: 4.2rem;
+    }
+    .why_choose .why_grid {
+      grid-template-columns: 758fr 1180fr;
+      grid-gap: 3rem;
+      padding-right: 7rem;
+    }
+    .why_choose .why_text p {
+      max-width: 79%;
+      font: var(--font14_new);
+      font-weight: var(--font_normal);
+    }
+    .why_choose .why_inner::before {
+      height: calc(100% - 14.3rem);
+    }
+    .why_choose .why_text {
+      padding-bottom: 0;
+    }
+    .why_choose .why_text .load_more {
+      margin-top: 1.6rem;
+    }
+    .why_choose .why_text .load_more .line {
+      background: var(--color_62);
+    }
+    .why_choose .why_text .load_more p {
+      border-color: var(--color_62);
+      font-weight: var(--font_medium);
+    }
+  } /*-----1750px-end----------*/
+  
+  @media (max-width: 1280px) {
+  } /*-----1280px-end----------*/
+  @media (max-width: 1199px) {
+  } /*-----1199px-end----------*/
+  @media (max-width: 991px) {
+  } /*-----991px-end----------*/
+  @media (max-width: 767px) {
+  } /*-----767px-end----------*/
+  @media (max-width: 575px) {
+  } /*-----575px-end----------*/
+  @media (max-width: 350px) {
+  } /*-----350px-end----------*/
+  /*----why_choose-css-end----*/

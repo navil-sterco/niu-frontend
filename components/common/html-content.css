@@ -1,0 +1,53 @@
+:where(.html-content) {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+:where(.html-content) :where(img, video, iframe) {
+  max-width: 100%;
+}
+:where(.html-content) :where(img, video) {
+  height: auto;
+}
+
+:where(.html-content) .html-content__table {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+:where(.html-content) table {
+  border-collapse: collapse;
+}
+
+:where(.html-content--prose) :where(p, ul, ol, blockquote, table) {
+  margin: 0 0 1.6rem;
+}
+:where(.html-content--prose) :where(ul, ol) {
+  padding-left: 2.4rem;
+}
+:where(.html-content--prose) :where(ul) {
+  list-style: disc;
+}
+:where(.html-content--prose) :where(ol) {
+  list-style: decimal;
+}
+:where(.html-content--prose) :where(li) {
+  margin-bottom: 0.8rem;
+}
+:where(.html-content--prose) :where(a) {
+  color: var(--color_46);
+  text-decoration: underline;
+}
+:where(.html-content--prose) :where(blockquote) {
+  padding-left: 1.6rem;
+  border-left: 4px solid var(--color_42);
+}
+:where(.html-content--prose) :where(th, td) {
+  padding: 1rem 1.4rem;
+  border: 1px solid #0000001a;
+  text-align: left;
+  vertical-align: top;
+}
+:where(.html-content--prose) :where(th) {
+  background-color: var(--color_f6);
+  font-weight: bold;
+}

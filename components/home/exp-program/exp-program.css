@@ -1,0 +1,254 @@
+
+.exp_program {
+  margin-top: -9rem;
+  position: relative;
+  z-index: 1;
+}
+.exp_program .program_serarch {
+  display: flex;
+  background: var(--color_46);
+  border-left: 0.5rem solid var(--color_29);
+  width: calc(100% + 4rem);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  overflow: hidden;
+}
+.exp_program .program_serarch li:not(:last-child) {
+  margin-right: 4rem;
+  padding-right: 4rem;
+}
+.exp_program .program_serarch li:first-child {
+  font: var(--font24);
+  color: var(--color_white);
+  background: rgb(0 0 0 / 22%);
+  height: 100%;
+  padding-inline: 4rem;
+  height: 9rem;
+  margin-right: 6.9rem;
+}
+.exp_program .program_serarch li {
+  position: relative;
+  padding-block: 2.4rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.exp_program .program_serarch li::before {
+  position: absolute;
+  right: 0rem;
+  width: 0.1rem;
+  height: 3.1rem;
+  background: rgb(255 255 255 / 30%);
+  content: "";
+}
+.exp_program .program_serarch li a {
+  font: var(--font18);
+  font-weight: var(--font_600);
+  font-family: var(--dmsans);
+  color: var(--color_white);
+}
+.exp_program .program_serarch li a:hover {
+  color: var(--color_42);
+}
+.exp_program .program_serarch li .btn_hovefct {
+  font: var(--font16);
+  font-weight: var(--font_medium);
+  font-family: var(--dmsans);
+  color: var(--color_black);
+}
+.exp_program .program_serarch li .btn_hovefct::before {
+  background: var(--color_white);
+}
+.exp_program .program_serarch li a.btn_hovefct:hover {
+  color: var(--color_46);
+}
+.exp_program .program_serarch li .input_group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.1rem solid var(--color_white);
+  padding-bottom: 1rem;
+  width: 24.4rem;
+}
+.exp_program .program_serarch li button {
+  border: none;
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  bottom: 1.1rem;
+  position: absolute;
+  right: 0;
+  background: transparent;
+}
+.exp_program .program_serarch li .input_group svg {
+  stroke: var(--color_white);
+}
+.exp_program .program_serarch li input::placeholder {
+  font: var(--font16);
+  font-weight: var(--font_normal);
+  font-family: var(--dmsans);
+  color: var(--color_white);
+  font-style: italic;
+}
+.exp_program .program_serarch li input {
+  font: var(--font16);
+  font-weight: var(--font_normal);
+  font-family: var(--dmsans);
+  color: var(--color_white);
+  background: transparent;
+  border: none;
+  width: 90%;
+}
+.exp_program .program_serarch li .input_group:hover svg {
+  stroke: var(--color_42);
+}
+.exp_program .program_serarch li:first-child:before,
+.exp_program .program_serarch li:last-child:before,
+.exp_program .program_serarch li:nth-last-of-type(2)::before {
+  display: none;
+}
+.exp_program .program_serarch li:nth-last-of-type(2) {
+  padding-right: 0;
+  margin-right: 5rem;
+}
+
+.exp_program .pgfact {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  border: 0.1rem solid rgb(112 112 112 / 25%);
+  background: var(--color_white);
+  padding: 3rem 11.3rem;
+  position: relative;
+  z-index: 1;
+  grid-gap: 6.8rem;
+}
+.exp_program .pgfact::before {
+  height: 39%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(112, 112, 112, 1) 0%,
+    rgba(237, 221, 83, 0) 100%
+  );
+  content: "";
+  z-index: -1;
+  opacity: 0.2;
+}
+.exp_program .pgfact li:not(:last-child)::before {
+  position: absolute;
+  right: 0rem;
+  width: 0.1rem;
+  height: 6.3rem;
+  background: rgb(0 0 0 / 20%);
+  content: "";
+}
+.exp_program .pgfact li {
+  position: relative;
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+.exp_program .pgfact li p {
+  font: var(--font16);
+  font-weight: var(--font_normal);
+  font-family: var(--dmsans);
+  color: var(--color_46);
+}
+.exp_program .pgfact li p span {
+  display: block;
+}
+.exp_program .pgfact li .counter {
+  font: var(--font50);
+  letter-spacing: -0.15rem;
+  font-family: var(--dmsans);
+  font-weight: var(--font_medium);
+  color: var(--color_46);
+}
+.exp_program .pgfact li .counter sup {
+  font: var(--font20);
+  letter-spacing: -0.6rem;
+  font-family: var(--dmsans);
+  font-weight: var(--font_medium);
+  color: var(--color_46);
+  top: -3rem;
+}
+.exp_program .pgfact li:not(:last-child) {
+  padding-right: 6.8rem;
+}
+
+@media (max-width: 1750px) {
+  .exp_program .program_serarch {
+    width: calc(100% + 2.1rem);
+    border-left: 0.3rem solid var(--color_29);
+  }
+  .exp_program .program_serarch li:first-child {
+    padding-inline: 2.1rem;
+    height: 4.8rem;
+  }
+  .exp_program .program_serarch li::before {
+    height: 1.7rem;
+  }
+  .exp_program .program_serarch li:not(:last-child) {
+    margin-right: 2.2rem;
+    padding-right: 2.2rem;
+  }
+  .exp_program .program_serarch li .input_group {
+    padding-bottom: 0.4rem;
+    width: 13.2rem;
+  }
+  .exp_program .program_serarch li .input_group svg {
+    width: 1rem;
+    height: 1rem;
+  }
+  .exp_program .program_serarch li {
+    padding-block: 0.8rem;
+  }
+  .exp_program .program_serarch li:nth-last-of-type(2) {
+    padding-right: 0.9rem;
+  }
+  .exp_program .program_serarch li:first-child {
+    margin-right: 8rem;
+  }
+  .exp_program {
+    margin-top: -4.9rem;
+  }
+  .exp_program .pgfact {
+    padding: 1.4rem 8.1rem;
+    grid-gap: 3rem;
+  }
+  .exp_program .pgfact li:not(:last-child) {
+    padding-right: 1.3rem;
+  }
+  .exp_program .pgfact li {
+    gap: 1.3rem;
+  }
+  .exp_program .pgfact li .counter sup {
+    top: -2rem;
+  }
+  .exp_program .pgfact li p {
+    color: var(--color_black);
+  }
+  .exp_program .pgfact li:not(:last-child)::before {
+    height: 3.4rem;
+  }
+} /*-----1750px-end----------*/
+
+@media (max-width: 1280px) {
+} /*-----1280px-end----------*/
+@media (max-width: 1199px) {
+} /*-----1199px-end----------*/
+@media (max-width: 991px) {
+} /*-----991px-end----------*/
+@media (max-width: 767px) {
+} /*-----767px-end----------*/
+@media (max-width: 575px) {
+} /*-----575px-end----------*/
+@media (max-width: 350px) {
+} /*-----350px-end----------*/
+/*----exp_program-css-end----*/

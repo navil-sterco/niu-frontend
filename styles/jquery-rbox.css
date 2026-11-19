@@ -1,0 +1,272 @@
+/*
+// add example for custom nav markup
+// add disable styles for next prev
+// HTML5 Video with Custom Videoposter demo
+  // is loading working? Not sure how to replicate and customize it?
+  // add docs for close on esc disabled
+ // add aria role
+
+
+ // custom close class needs to be deactivated
+ // on closing gallery type, scroll is not handled
+  // instead of fitvids, can we have js for iframe width: 100vw,
+ height: padding-bottom vw; http://stackoverflow.com/questions/25302836/responsive-video-iframes-keeping-aspect-ratio-with-only-css, doesn't seem to work if you need to constrain the parent width
+// arrays for custom navmarkup defaults
+// separate close and next prev
+// create arrays for custom classes for nav
+// duplication in code in js for next previous logic
+// Video type shows error in console when playing bunny video: Uncaught TypeError: Cannot read property 'pause' of undefined;
+// why data height or height is showing smaller than height i'm defining for video?
+// data height and widths for video and iframes broken? or only height? update demos accorindingly. iframe is not getting height only properly
+// is it a problem to have defaults for next prev close declared in CSS as well as opts inside js?
+// replace bind with on method
+// Namespace
+// opt: throttle window resize;
+*/
+
+* {
+  box-sizing: border-box; /* Remove if included in your site's global styles */
+}
+
+.rbox-overlay {
+  text-align: center;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transition: opacity 0.25s ease; /* animates the fade */
+  backdrop-filter: blur(19px);
+  -webkit-backdrop-filter: blur(19px);
+}
+
+.rbox-overlay--show {
+  opacity: 1;
+  z-index: 10000;
+}
+
+.rbox-overlay--short {
+  align-items: flex-start; /* for when rbox content is taller than viewport */
+  position: absolute;
+}
+
+.rbox-wrap {
+  margin: 25px auto;
+  max-width: 80%;
+  position: relative;
+  display: inline-block;
+}
+
+.rbox-wrap--inline,
+.rbox-wrap--html,
+.rbox-wrap--ajax {
+  background: #fff;
+  padding: 20px;
+}
+
+.rbox {
+  position: relative;
+  /* background: var(--color_white);
+  width: 67.4vw;
+  padding: 5rem 0rem 10rem; */
+}
+
+.rbox-next,
+.rbox-prev,
+.rbox-close {
+  color: #777;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.rbox-next:hover,
+.rbox-next:focus,
+.rbox-prev:hover,
+.rbox-prev:focus,
+.rbox-close:hover,
+.rbox-close:focus {
+  color: #aaa;
+}
+
+/*.rbox-close:after {
+	content: "\274c";
+}
+
+.rbox-next:after {
+	content: "\25b6";
+}
+
+.rbox-prev:after {
+	content: "\25c0";
+}*/
+
+.rbox-close {
+  position: absolute;
+  right: 4rem;
+  top: 3rem;
+  font: var(--font18);
+  padding: 0;
+}
+
+.rbox-next,
+.rbox-prev {
+  position: absolute;
+  top: 44%;
+  font-size: 20px;
+}
+
+.rbox-next {
+  right: -1.5rem;
+}
+
+.rbox-prev {
+  left: -1.5rem;
+}
+
+.rbox-content image {
+  height: 70vh;
+}
+
+.rbox-content iframe {
+  max-width: 100%;
+  width: 100vw;
+  height: 70vh;
+}
+
+.rbox-content img,
+.rbox-content video {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; /* Remove if included in your site's global styles */
+  height: auto; /* Remove if included in your site's global styles */
+  width: 100%;
+}
+
+.rbox-content iframe {
+  border: 0; /* Remove if included in your site's global styles */
+}
+.rbox-next,
+.rbox-prev {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-size: contain;
+  font-size: 0;
+  position: static;
+  position: absolute;
+  bottom: 3.5rem;
+  background-repeat: no-repeat;
+  padding: 0;
+  background-repeat: no-repeat;
+  width: 3.4rem;
+  height: 3.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color_white);
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.rbox-next {
+  /* background-image: url(../images/slide-chevron-right.webp); */
+}
+.rbox-prev {
+  /* background-image: url(../images/slide-chevron-left.webp); */
+}
+/* .rbox-content {min-width: 91rem;} */
+.rbox-close {
+  width: 3.4rem;
+  height: 3.4rem;
+  font: var(--font16);
+  right: -1.7rem;
+  top: -2rem;
+  background-color: var(--color_white);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rbox-close:hover,
+.rbox-next:hover,
+.rbox-prev:hover {
+  filter: grayscale(100);
+}
+.rbox-caption {
+  font: var(--font16);
+  font-weight: var(--font_normal);
+  color: var(--color_white);
+  text-align: center;
+  margin-top: 4rem;
+}
+/* @media (max-width:1199px) {
+	.rbox {width: 80vw;padding: 3rem 0rem 8rem;}
+	.rbox-next {top: inherit;right: 2.2rem;bottom: 2.2rem;}
+	.rbox-prev {left:2.2rem;}
+	.rbox-next, .rbox-prev {width: 2.3rem;height: 2.3rem;margin-top: 0rem;bottom: 2.2rem;}
+	.rbox-caption {bottom: 2rem;}
+	.rbox-close {right: 3rem;top: 2rem;}
+
+}
+*/
+@media (max-width: 1950px) {
+  .rbox-wrap {
+    max-width: 60%;
+  }
+}
+@media (max-width: 1649px) {
+  .rbox-wrap {
+    max-width: 65%;
+  }
+}
+@media (max-width: 1399px) {
+  .rbox-wrap {
+    max-width: 70%;
+  }
+}
+@media (max-width: 1199px) {
+  .rbox-wrap {
+    max-width: 80%;
+  }
+}
+@media (max-width: 991px) {
+  .rbox-close {
+    font-size: 1.3rem;
+  }
+  .rbox-close,
+  .rbox-next,
+  .rbox-prev {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .rbox-next,
+  .rbox-prev {
+    top: 37%;
+    transform: translateY(-50%);
+  }
+  .rbox-wrap {
+    max-width: 85%;
+  }
+  .rbox-caption {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .rbox-wrap {
+    max-width: 90%;
+  }
+  .rbox-caption {
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 575px) {
+}
+
+@media (max-width: 350px) {
+}

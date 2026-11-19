@@ -1,0 +1,295 @@
+
+.hmstudy {
+  padding-bottom: 14rem;
+}
+.hmstudy .heading {
+  text-align: center;
+  padding-block: 12rem 7.9rem;
+  text-align: center;
+  border-top: 0.1rem solid var(--color_d9);
+}
+.hmstudy .heading h1 {
+  font: var(--font18);
+  font-weight: var(--font_600);
+  font-family: var(--poppins);
+  letter-spacing: 0.27rem;
+}
+.hmstudy .heading blockquote {
+  font: var(--font56);
+  font-weight: var(--font_bold);
+  font-family: var(--dmsans);
+  letter-spacing: -0.224rem;
+  color: var(--color_46);
+  margin-block: 2rem;
+}
+.hmstudy .heading p {
+  font: var(--font16);
+  font-weight: var(--font_normal);
+  font-family: var(--dmsans);
+  line-height: 1.62;
+  max-width: 68%;
+  margin-inline: auto;
+}
+.hmstudy .pgm_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.2rem;
+}
+.hmstudy .pgm_grid > figure {
+  display: grid;
+  position: relative;
+  overflow: hidden;
+}
+.hmstudy .pgm_grid > figure::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 36.9%;
+  background: linear-gradient(
+    0deg,
+    rgb(0 0 0 / 60%) 0%,
+    rgba(237, 221, 83, 0) 100%
+  );
+  content: "";
+}
+.hmstudy .pgm_grid > figure > * {
+  grid-area: 1/1;
+}
+.hmstudy .pgm_grid > figure > figcaption {
+  display: flex;
+  align-items: flex-end;
+  padding: 3.8rem;
+  position: relative;
+}
+.hmstudy .caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.hmstudy .caption .left_btn {
+  opacity: 0.8;
+}
+.hmstudy .caption p {
+  font: var(--font24);
+  font-family: var(--dmsans);
+  font-weight: var(--font_600);
+  color: var(--color_white);
+}
+.hmstudy .pgm_grid > figure:hover p {
+  color: var(--color_42);
+}
+.hmstudy .pgm_grid > figure:hover .left_btn.btn_hovefct {
+  opacity: 1;
+}
+.hmstudy .pgm_grid > figure:hover .left_btn.btn_hovefct::before {
+  height: 100%;
+  top: 0;
+  background: var(--color_46);
+}
+
+.pgminfo {
+  background: var(--color_46);
+  display: flex;
+  justify-content: space-between;
+  padding-inline: var(--pd12_left) 3.3rem;
+  align-items: center;
+  padding-block: 1.2rem 1.3rem;
+}
+.pgminfo .brose_schol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.2rem;
+}
+.pgminfo .brose_schol a {
+  gap: 2rem;
+}
+.pgminfo .brose_schol a,
+.pgminfo .mail_info li a {
+  display: flex;
+  flex-wrap: wrap;
+  font: var(--font21);
+  font-family: var(--dmsans);
+  color: var(--color_white);
+  font-weight: var(--font_normal);
+  align-items: center;
+}
+.pgminfo .brose_schol a svg {
+  stroke: var(--color_white);
+}
+.pgminfo .brose_schol a:hover {
+  color: var(--color_42);
+}
+.pgminfo .brose_schol a:hover svg {
+  stroke: var(--color_42);
+}
+.pgminfo .mail_info {
+  display: flex;
+  align-items: center;
+}
+.pgminfo .mail_info li a {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.pgminfo .mail_info li a:hover {
+  color: var(--color_42);
+}
+.pgminfo .mail_info li:not(:last-child) a {
+  padding-right: 1.6rem;
+  border-right: 0.1rem solid var(--color_cc);
+}
+.pgminfo .mail_info li:not(:last-child) {
+  margin-right: 1.6rem;
+}
+.pgminfo .mail_info li:nth-last-of-type(2) a {
+  padding-right: 0;
+  border: none;
+}
+.pgminfo .mail_info li .btn_hovefct {
+  padding: 0.6rem 1.3rem;
+  font: var(--font18);
+  font-family: var(--dmsans);
+  font-weight: var(--font_medium);
+  letter-spacing: -0.027rem;
+  color: var(--color_black);
+  line-height: 1.4;
+}
+.pgminfo .mail_info li .btn_hovefct:hover::before {
+  background: var(--color_white);
+}
+.pgminfo .mail_info li .btn_hovefct:hover {
+  color: var(--color_46);
+}
+
+.adminfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4.5rem;
+  margin-top: 3.2rem;
+}
+.adminfo li a {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  font: var(--font18);
+  font-family: var(--dmsans);
+  color: var(--color_1f);
+  font-weight: var(--font_medium);
+  padding-bottom: 1.6rem;
+  border-bottom: 0.2rem dashed var(--color_70);
+}
+.adminfo li a svg {
+  stroke: var(--color_46);
+  min-width: 0.7rem;
+}
+.adminfo li:not(:first-child) {
+  padding-left: 5.1rem;
+  position: relative;
+}
+.adminfo li:not(:first-child)::before {
+  width: 0.6rem;
+  height: 0.6rem;
+  background: var(--color_42);
+  left: 0;
+  top: 1rem;
+  position: absolute;
+  content: "";
+  border-radius: 100%;
+}
+.adminfo li a:hover {
+  color: var(--color_46);
+  border-color: var(--color_42);
+}
+
+@media (max-width: 1750px) {
+  .hmstudy {
+    padding-bottom: 12rem;
+  }
+  .hmstudy .heading {
+    padding-block: 0rem 2.9rem;
+    border-top: none;
+  }
+  .hmstudy .heading blockquote {
+    margin-block: 1.2rem;
+    letter-spacing: -0.123px;
+  }
+  .hmstudy .heading p {
+    font: var(--font14_new);
+    font-family: var(--dmsans);
+    font-weight: var(--font_normal);
+    line-height: 1.45;
+    max-width: 80%;
+  }
+  .hmstudy .pgm_grid > figure::before {
+    height: 34.9%;
+  }
+  .hmstudy .pgm_grid > figure > figcaption {
+    padding: 2.1rem 2.2rem;
+  }
+  .pgminfo {
+    padding-block: 0.5rem 0.6rem;
+    max-width: 92.5%;
+    margin-inline: auto;
+    padding-inline: var(--pd12_left) 0.6rem;
+  }
+  .pgminfo .brose_schol a {
+    gap: 1.1rem;
+  }
+  .pgminfo .mail_info li .btn_hovefct {
+    padding: 0.8rem 1.4rem;
+  }
+  .pgminfo .brose_schol {
+    gap: 1.7rem;
+  }
+  .pgminfo .mail_info li:not(:last-child) a {
+    padding-right: 1.4rem;
+  }
+  .pgminfo .mail_info li:not(:last-child) {
+    margin-right: 1.4rem;
+  }
+  .pgminfo .mail_info li:not(:last-child) a img {
+    width: 1.4rem;
+    height: auto;
+  }
+  .pgminfo .brose_schol a svg {
+    width: 0.4rem;
+  }
+  .adminfo {
+    gap: 1.6rem;
+    margin-top: 1.8rem;
+  }
+  .adminfo li a {
+    gap: 0.7rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 0.1rem dashed var(--color_70);
+  }
+  .adminfo li:not(:first-child) {
+    padding-left: 1.6rem;
+  }
+  .adminfo li:not(:first-child)::before {
+    width: 0.3rem;
+    height: 0.3rem;
+    top: 0.8rem;
+  }
+  .adminfo li a svg {
+    width: 0.4rem;
+    min-width: auto;
+  }
+} /*-----1750px-end----------*/
+
+@media (max-width: 1280px) {
+} /*-----1280px-end----------*/
+@media (max-width: 1199px) {
+} /*-----1199px-end----------*/
+@media (max-width: 991px) {
+} /*-----991px-end----------*/
+@media (max-width: 767px) {
+} /*-----767px-end----------*/
+@media (max-width: 575px) {
+} /*-----575px-end----------*/
+@media (max-width: 350px) {
+} /*-----350px-end----------*/
+/*----hmstudy-css-end----*/

@@ -1,0 +1,649 @@
+
+
+.reveal {
+  opacity: 0;
+  transform: translateY(3rem);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+@media (scripting: none) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.img_placeholder {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: #d9d9d9;
+}
+.link_stretched {
+  position: absolute;
+  inset: 0;
+}
+.deptmain_banner picture,
+.deptmain_banner img {
+  display: block;
+}
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+.deptcsedrop_wrap .custm_select {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0 3.2rem 0 0;
+  cursor: pointer;
+  width: 100%;
+  text-overflow: ellipsis;
+  font: var(--font21);
+  font-weight: var(--font_bold);
+  font-family: var(--dmsans);
+  color: var(--color_1f);
+}
+.deptcsedrop_wrap .custm_select:focus-visible {
+  outline: 0.2rem solid var(--color_46);
+  outline-offset: 0.4rem;
+}
+
+.deptmain_banner .custom-pagination button.swiper-pagination-bullet {
+  appearance: none;
+  padding: 0;
+  padding-top: 0.2rem;
+}
+.deptmain_banner .custom-pagination .swiper-pagination-bullet-active {
+  padding-top: 0;
+}
+
+.deptlab_wrap .panel:focus-visible {
+  outline: 0.3rem solid var(--color_42);
+  outline-offset: -0.3rem;
+}
+.deptlab_wrap .panel {
+  min-width: 0;
+}
+
+.dept_facslider,
+.hmalumni {
+  overflow: hidden;
+}
+.dept_facslider .swiper-slide {
+  height: auto;
+}
+.dept_faculty .swiper-button-disabled {
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.dept_loading {
+  min-height: 45vh;
+  background: linear-gradient(90deg, #ececec 25%, #f6f6f6 37%, #ececec 63%);
+  background-size: 400% 100%;
+  animation: dept-shimmer 1.4s ease infinite;
+}
+.dept_loading_lines {
+  padding-block: 4rem;
+  display: grid;
+  gap: 1.2rem;
+}
+.dept_loading_lines span {
+  height: 1.6rem;
+  background: #ececec;
+}
+.dept_loading_lines span:nth-child(2) {
+  width: 80%;
+}
+.dept_loading_lines span:nth-child(3) {
+  width: 55%;
+}
+@keyframes dept-shimmer {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+.dept_state {
+  padding-block: 14rem;
+  text-align: center;
+  background: var(--color_f7);
+}
+.dept_state h1 {
+  font-size: 3.6rem;
+  margin-bottom: 1.2rem;
+  color: var(--color_1f);
+}
+.dept_state p {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+.dept_state .btn_hovefct {
+  display: inline-block;
+  padding: 1rem 2.4rem;
+  background: var(--color_42);
+  border: 0;
+}
+
+.left_btn .btn_hovefct img{
+  width: 12px !important;
+  height: 12px !important;
+}
+
+
+@media (max-width: 1399px) {
+  .about_dept .heading {
+    padding-inline: 4rem;
+  }
+  .about_dept .heading blockquote {
+    font-size: 3.6rem;
+  }
+  .hod_mesge .hod_grid {
+    grid-gap: 8rem;
+  }
+  .dept_faculty .faculty_heading {
+    gap: 8rem;
+    width: 90%;
+  }
+  .dept_faclite .heading_grid {
+    grid-gap: 8rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .deptmain_banner .caption .heading {
+    font-size: 4rem;
+  }
+  .deptcsedrop_wrap {
+    bottom: 11rem;
+  }
+
+  .about_dept {
+    padding-block: 7rem;
+  }
+  .about_dept .heading {
+    padding-inline: 0;
+  }
+  .about_dept .heading blockquote {
+    font-size: 3.2rem;
+    margin-block: 1.4rem 3rem;
+  }
+  .about_dept figure>figcaption p {
+    max-width: 70%;
+  }
+  .about_dept .key_area>p {
+    max-width: 100%;
+  }
+  .about_dept .key ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hod_mesge .hod_grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+    padding-right: 0;
+  }
+  .hod_mesge .hod_info blockquote {
+    font-size: 2.6rem;
+    padding-right: 0;
+  }
+
+  .cse_dept {
+    padding-block: 6rem 8rem;
+  }
+  .cse_dept .heading blockquote {
+    font-size: 3.4rem;
+  }
+  .cse_dept .dept_wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .deptcse_menu .container {
+    flex-wrap: wrap;
+    gap: 1rem 3rem;
+  }
+
+  .dept_faculty {
+    padding-top: 7rem;
+  }
+  .dept_faculty .faculty_inner {
+    padding-block: 5rem 7rem;
+  }
+  .dept_faculty .faculty_heading {
+    width: 100%;
+    gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .dept_faculty .heading blockquote {
+    font-size: 3.4rem;
+  }
+
+  .dept_faclite .heading_grid {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+    padding-block: 6rem 3rem;
+  }
+  .dept_faclite .life_fact .fact_wrap {
+    justify-content: flex-start;
+    gap: 6rem;
+  }
+  .deptlab_wrap {
+    min-height: 42rem;
+  }
+
+  .dept_galry {
+    padding-inline: 4rem;
+    padding-bottom: 8rem;
+  }
+  .dept_galry .glry_grid {
+    column-count: 3;
+  }
+
+  .dept_faq {
+    padding-block: 7rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .deptmain_banner .caption {
+    padding-bottom: 3rem;
+  }
+  .deptmain_banner .caption .heading {
+    font-size: 3.2rem;
+  }
+  .deptmain_banner .custom-pagination {
+    right: 1.6rem;
+  }
+  .deptcsedrop_wrap {
+    position: relative;
+    bottom: auto;
+    background: var(--color_42);
+    padding-block: 1.2rem;
+  }
+  .deptcsedrop_wrap .cse_dropdown {
+    display: flex;
+    width: 100%;
+    padding: 0;
+  }
+  .deptcsedrop_wrap .cse_dropdown p {
+    min-width: auto;
+    white-space: nowrap;
+  }
+
+  .about_dept figure:has(figcaption) {
+    display: block;
+  }
+  .about_dept figure:has(figcaption)::after {
+    display: none;
+  }
+  .about_dept figure>figcaption {
+    padding: 2rem;
+    background: var(--color_46);
+  }
+  .about_dept figure>figcaption p {
+    max-width: 100%;
+  }
+  .about_dept .key ul li {
+    padding: 2rem 1.2rem;
+  }
+
+  /* hod */
+  .hod_mesge {
+    padding-top: 5rem;
+  }
+  .hod_mesge .hod_grid {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
+  .hod_mesge .hod_info {
+    order: -1;
+    padding-bottom: 0;
+  }
+  .hod_mesge .hod_grid>figure {
+    max-width: 46rem;
+    margin-inline: auto;
+  }
+  .hod_mesge .hod_info p {
+    max-width: 100%;
+  }
+  .hod_mesge .hod_info blockquote {
+    font-size: 2.4rem;
+  }
+
+  .deptcse_menu {
+    position: static;
+    padding-block: 1.2rem;
+  }
+  .deptcse_menu .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+  .deptcse_menu .dept_menu {
+    max-width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    scrollbar-width: none;
+    padding-bottom: 0.4rem;
+  }
+  .deptcse_menu .dept_menu::-webkit-scrollbar {
+    display: none;
+  }
+  .deptcse_menu .mail_info {
+    flex-wrap: wrap;
+    gap: 1rem 0;
+  }
+
+  :root {
+    --width24: 2rem;
+  }
+  .dept_faculty .faculty_inner .left_border,
+  .dept_faculty .faculty_inner .left_border::before {
+    width: 0.8rem;
+  }
+  .dept_faculty .faculty_inner {
+    padding-inline-start: 1.6rem;
+  }
+  .dept_faculty .faculty_heading {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  .dept_faculty .swiper_custombtn {
+    position: static;
+    display: flex;
+    gap: 1rem;
+    order: 2;
+    margin-top: 2.4rem;
+  }
+  .dept_faculty .faculty_inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .dept_faculty .swiper_custombtn .swiper-button-prev,
+  .dept_faculty .swiper_custombtn .swiper-button-next {
+    position: static;
+    margin: 0 !important;
+  }
+  .dept_faculty .dept_facslider {
+    order: 1;
+  }
+  .dept_faculty .dept_facdetil h5 {
+    font-size: 2rem;
+  }
+
+  .deptlab_wrap {
+    flex-direction: column;
+    min-height: 0;
+  }
+  .deptlab_wrap .panel,
+  .deptlab_wrap .panel.active {
+    flex: none;
+    height: 8.4rem;
+    overflow: hidden;
+    transition: height 0.45s ease;
+  }
+  .deptlab_wrap .panel.active {
+    height: 30rem;
+  }
+  .deptlab_wrap figure img {
+    object-fit: cover;
+  }
+  .deptlab_wrap figcaption {
+    padding-bottom: 2.2rem;
+  }
+  .deptlab_wrap figcaption h5 {
+    font-size: 2rem;
+  }
+
+  /* gallery */
+  .dept_galry {
+    padding-inline: 2rem;
+    padding-bottom: 6rem;
+  }
+
+  /* faq */
+  .dept_faq .heading h5 {
+    font-size: 3.2rem;
+  }
+  .dept_faq .accordion-item .accordion-button {
+    font-size: 2rem;
+    padding-block: 3rem 1.6rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .deptmain_banner .caption .heading {
+    font-size: 2.6rem;
+  }
+  .deptmain_banner .custom-pagination {
+    gap: 1.2rem;
+  }
+
+  .about_dept {
+    padding-block: 5rem;
+  }
+  .about_dept .heading blockquote {
+    font-size: 2.6rem;
+  }
+  .about_dept .key h2 span {
+    padding-inline: 2rem;
+  }
+  .about_dept .key_area {
+    margin-top: 3rem;
+  }
+
+  .hod_mesge .hod_info blockquote {
+    font-size: 2.1rem;
+  }
+  .hod_mesge .name_social {
+    grid-template-columns: 1fr auto;
+    gap: 1.6rem;
+  }
+
+  .cse_dept {
+    padding-block: 5rem 6rem;
+  }
+  .cse_dept::before {
+    width: 100%;
+    opacity: 0.5;
+  }
+  .cse_dept .heading blockquote {
+    font-size: 2.8rem;
+    margin-block: 1rem 3rem;
+  }
+  .cse_dept .dept_box {
+    padding: 1.6rem 1.8rem;
+  }
+
+  .dept_faculty {
+    padding-top: 5rem;
+  }
+  .dept_faculty .faculty_inner {
+    padding-block: 4rem 5rem;
+  }
+  .dept_faculty .heading blockquote {
+    font-size: 2.8rem;
+  }
+
+  .dept_faclite .heading_grid {
+    padding-block: 5rem 2.4rem;
+  }
+  .dept_faclite .life_fact .counter {
+    font-size: 4rem;
+  }
+  .dept_faclite .life_fact .counter_wrap p {
+    font-size: 1.6rem;
+  }
+  .deptlab_wrap .panel.active {
+    height: 26rem;
+  }
+
+  .dept_galry .glry_grid {
+    column-count: 2;
+  }
+
+  .dept_faq {
+    padding-block: 5rem;
+  }
+  .dept_faq .heading h5 {
+    font-size: 2.6rem;
+  }
+  .dept_faq .accordion-item .accordion-button {
+    font-size: 1.8rem;
+    padding-inline: 4.4rem 0;
+  }
+  .dept_faq .accordion-item .accordion-body {
+    padding-inline: 4.4rem 0;
+  }
+  .dept_faq .accordion-item .accordion-body p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .deptmain_banner .caption .heading {
+    font-size: 2.2rem;
+  }
+  .deptmain_banner .custom-pagination {
+    right: 0.8rem;
+  }
+  .deptcsedrop_wrap .cse_dropdown {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+  .deptcsedrop_wrap .cse_dropdown p {
+    border-right: 0;
+    padding-right: 0;
+  }
+  .deptcsedrop_wrap .custm_select {
+    font-size: 1.7rem;
+  }
+
+  .about_dept .heading blockquote {
+    font-size: 2.2rem;
+  }
+  .about_dept .key ul {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .about_dept .key_area>p {
+    text-align: left;
+  }
+
+  .hod_mesge .hod_info h3 {
+    margin-block: 1.6rem;
+  }
+  .hod_mesge .hod_info blockquote {
+    font-size: 1.9rem;
+  }
+
+  .cse_dept .dept_wrap {
+    grid-template-columns: 1fr;
+  }
+  .cse_dept .heading blockquote {
+    font-size: 2.4rem;
+  }
+
+  .deptcse_menu .mail_info li:not(:last-child) a {
+    border-right: 0;
+    padding-right: 0;
+  }
+  .deptcse_menu .mail_info li:not(:last-child) {
+    margin-right: 1.6rem;
+  }
+
+  .dept_faculty .heading blockquote {
+    font-size: 2.4rem;
+  }
+
+  .dept_faclite .life_fact .fact_wrap {
+    gap: 3rem;
+  }
+  .dept_faclite .life_fact .counter {
+    font-size: 3.4rem;
+  }
+  .deptlab_wrap .panel,
+  .deptlab_wrap .panel.active {
+    height: 7rem;
+  }
+  .deptlab_wrap .panel.active {
+    height: 22rem;
+  }
+  .deptlab_wrap figcaption h5 {
+    font-size: 1.7rem;
+  }
+
+  .dept_galry {
+    padding-inline: 1.2rem;
+  }
+
+  .dept_faq .accordion-item .accordion-button {
+    font-size: 1.6rem;
+    padding-block: 2.4rem 1.4rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .deptmain_banner .caption .heading {
+    font-size: 2rem;
+  }
+  .dept_faclite .life_fact .fact_wrap {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .dept_galry .glry_grid {
+    column-count: 1;
+  }
+}
+
+.dept_faq .faq_panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+.dept_faq .faq_panel.is-open {
+  grid-template-rows: 1fr;
+}
+.dept_faq .faq_panel_inner {
+  min-height: 0;
+  overflow: hidden;
+}
+.dept_faq .faq_panel:not(.is-open) .accordion-body {
+  visibility: hidden;
+}
+.dept_faq .faq_panel .accordion-body p {
+  color: var(--color_white, #fff);
+  margin-bottom: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .dept_faq .faq_panel {
+    transition: none;
+  }
+}
+
+
+.dept_facslider .swiper-wrapper {
+  transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+

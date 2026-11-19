@@ -1,0 +1,61 @@
+.ld-page {
+  .leader_list { position: relative; }
+  .leader_list figure {
+    padding: 2.75rem 2.4rem 0;
+    background: #efefef;
+    background: linear-gradient(120deg, rgba(239, 239, 239, 1) 0%, rgba(214, 214, 214, 1) 50%);
+  }
+  .leader_list figcaption {
+    background: #efefef;
+    background: linear-gradient(130deg, rgba(239, 239, 239, 1) 100%, rgba(214, 214, 214, 1) 100%);
+    padding-block: 3.3rem 4.1rem;
+    text-align: center;
+    position: relative;
+  }
+  .leader_list figcaption h4 {
+    font: var(--font24);
+    color: var(--color_20);
+    font-family: var(--dmsans);
+    font-weight: var(--font_300);
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+  }
+  .leader_list figcaption p {
+    font: var(--font16);
+    color: var(--color_20);
+    font-family: var(--dmsans);
+    font-weight: var(--font_300);
+    line-height: 1.4;
+  }
+  .leader_list figcaption:before {
+    content: "";
+    display: block;
+    width: 30rem;
+    max-width: 80%;
+    height: 0.4rem;
+    background: linear-gradient(to right, #2f7246 65%, #e8bc42 35%);
+    margin: 0 auto;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  /* The whole card is one link (original: .leadership_links with font-size 0) */
+  .leader_list .leadership_links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 0;
+  }
+  .leader_list .leadership_links:focus-visible {
+    outline: 3px solid var(--color_46);
+    outline-offset: -3px;
+  }
+
+  @media (max-width: 991px) {
+    .leader_list figure { padding: 2rem 1.6rem 0; }
+    .leader_list figcaption { padding-block: 2.4rem 3rem; }
+  }
+}

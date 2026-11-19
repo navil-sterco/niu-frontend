@@ -1,0 +1,202 @@
+.ov-page {
+  .abt-images {
+    background-color: var(--color_f7);
+  }
+  .rooted {
+    padding-inline: 9rem 9rem;
+  }
+  .rooted_grp {
+    background-color: var(--color_46);
+    padding-block: 8.9rem 7.5rem;
+  }
+  .rooted_grp .abtcounter_grid {
+    margin-top: 0;
+  }
+  .rooted_grp .abtcounter_cont p {
+    color: var(--color_white);
+  }
+
+  .abtimg_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .abtimg_grid.abtimg_grid--single {
+    grid-template-columns: 1fr;
+  }
+  .abtright_two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .abtimg_grid > figure,
+  .abtright_grid figure,
+  .abtright_two > figure {
+    position: relative;
+  }
+
+  .abtimg_grid > figure:before {
+    width: 100%;
+    height: 38.5rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: transparent
+      linear-gradient(180deg, #00000000 0%, rgb(0 0 0) 100%);
+    opacity: 0.82;
+    content: "";
+    z-index: 1;
+    pointer-events: none;
+  }
+  .abtimg_grid > figure figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 7.1rem;
+    padding-inline: 12rem 5.6rem;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    z-index: 99;
+    width: 100%;
+    pointer-events: none;
+  }
+  .abtimg_grid > figure figcaption .counter {
+    font: var(--font50);
+    letter-spacing: -0.15rem;
+    font-family: var(--dmsans);
+    font-weight: var(--font_medium);
+    color: var(--color_white);
+    margin-bottom: 0.9rem;
+  }
+  .abtimg_grid > figure figcaption p {
+    font: var(--font16);
+    font-weight: var(--font_normal);
+    font-family: var(--dmsans);
+    color: var(--color_white);
+  }
+
+  .abtright_grid > figure:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 20%;
+    pointer-events: none;
+  }
+  .abtright_grid figure figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 7.1rem;
+    padding-inline: 7.2rem 5.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    width: 100%;
+    pointer-events: none;
+  }
+  .abtright_two > figure:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 50%;
+    pointer-events: none;
+  }
+  .abtright_grid figure figcaption .counter {
+    font: var(--font48);
+    letter-spacing: -2.4px;
+    font-family: var(--dmsans);
+    font-weight: var(--font_medium);
+    color: var(--color_white);
+    margin-bottom: 0.9rem;
+  }
+  .abtright_grid figure figcaption p {
+    font: var(--font16);
+    font-weight: var(--font_normal);
+    font-family: var(--dmsans);
+    color: var(--color_white);
+  }
+
+  @media (max-width: 1950px) {
+    .abt-images .abtcounter_grid {
+      grid-template-columns: auto 95.2rem;
+    }
+    .abt-images .abtcounter_cont {
+      margin-right: 16rem;
+    }
+  }
+  @media (max-width: 1750px) {
+    .abt-images .abtcounter_grid {
+      grid-template-columns: auto 50.2rem;
+      gap: 4.7rem;
+    }
+    .abt-images .abtcounter_cont {
+      margin-right: 0;
+    }
+    .rooted_grp {
+      padding-block: 5.9rem 5.5rem;
+    }
+    .abtimg_grid > figure figcaption {
+      bottom: 4.1rem;
+      padding-inline: 5rem 4.6rem;
+    }
+    .abtright_grid figure figcaption {
+      bottom: 4.1rem;
+      padding-inline: 5rem 4.6rem;
+    }
+  }
+  @media (max-width: 1366px) {
+    .abtimg_grid > figure figcaption {
+      bottom: 3.1rem;
+      padding-inline: 3rem 2.6rem;
+    }
+    .abtright_grid figure figcaption {
+      bottom: 2.1rem;
+      padding-inline: 3rem 2.6rem;
+    }
+  }
+
+  /* Tablet / mobile */
+  @media (max-width: 991px) {
+    .rooted {
+      padding-inline: 0;
+    }
+    .rooted_grp {
+      padding-block: 4rem;
+    }
+    .abt-images .abtcounter_grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .abt-images .abtcounter_cont {
+      margin-right: 0;
+    }
+    .abtimg_grid {
+      grid-template-columns: 1fr;
+    }
+    .abtimg_grid > figure:before {
+      height: 22rem;
+    }
+    .abtimg_grid > figure figcaption {
+      bottom: 2rem;
+      padding-inline: 2rem;
+    }
+    .abtright_grid figure figcaption {
+      bottom: 2rem;
+      padding-inline: 2rem;
+    }
+    .abtright_grid figure figcaption p {
+      font-size: 1.3rem;
+    }
+  }
+  @media (max-width: 575px) {
+    .abtright_two {
+      grid-template-columns: 1fr;
+    }
+  }
+}

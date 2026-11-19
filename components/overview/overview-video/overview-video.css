@@ -1,0 +1,106 @@
+.ov-page {
+  .abtimg_grid > figure .play-btn,
+  .abtright_grid figure .play-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 0;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    z-index: 100;
+    pointer-events: auto;
+  }
+  .play-btn:focus-visible {
+    outline: 3px solid var(--color_42);
+    outline-offset: -3px;
+  }
+}
+
+.ov_lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+}
+.ov_fade {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+.ov_light {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 100rem;
+  background: var(--color_white, #fff);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.ov_light video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  background: #000;
+}
+.ov_light iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+.ov_light_error {
+  margin: 0;
+  padding: 4rem 2rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: var(--dmsans, sans-serif);
+  color: var(--color_20, #231f20);
+}
+.ov_lightbox .boxclose {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  background: var(--color_white, #fff);
+  border: 0;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+.ov_lightbox .boxclose::before,
+.ov_lightbox .boxclose::after {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  left: 0.8rem;
+  width: 1.6rem;
+  height: 0.2rem;
+  background: var(--color_black, #000);
+}
+.ov_lightbox .boxclose::before {
+  transform: rotate(45deg);
+}
+.ov_lightbox .boxclose::after {
+  transform: rotate(-45deg);
+}
+.ov_lightbox .boxclose:focus-visible {
+  outline: 2px solid var(--color_42, #e8bc42);
+  outline-offset: 2px;
+}
+
+@media (max-width: 991px) {
+  .ov_lightbox .boxclose {
+    top: -1.2rem;
+    right: 0;
+  }
+}

@@ -1,0 +1,27 @@
+:where(.pd-page .common_head) {
+  /* background: linear-gradient(90deg, var(--color_2c), var(--color_46)); */
+  padding-block: 9rem 7rem;
+}
+:where(.pd-page .common_title) h1 {
+  font: var(--font18);
+  color: var(--color_42);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.2rem;
+}
+:where(.pd-page .common_title) blockquote {
+  font: var(--font46);
+  color: var(--color_white);
+  line-height: 1.2;
+  letter-spacing: -0.74px;
+}
+
+.pd-page {
+  @media (max-width: 1950px) {
+    .common_head { padding-block: 6.95rem 5.29rem; }
+  }
+  @media (max-width: 991px) {
+    .common_head { padding-block: 4.5rem 4rem; }
+    .common_title blockquote { font-size: 2.4rem; }
+  }
+}

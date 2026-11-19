@@ -1,0 +1,45 @@
+:where(.cu-page .container) {
+  margin-inline: auto;
+}
+:where(.cu-page .img-fluid) {
+  max-width: 100%;
+  height: auto;
+}
+:where(.cu-page .w-100) {
+  width: 100%;
+}
+:where(.cu-page .cms-html) {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+:where(.cu-page .top_ttl h3) {
+  font: var(--font21);
+  color: var(--color_1f);
+  font-weight: var(--font_bold);
+  line-height: 1.24;
+  font-family: var(--dmsans);
+}
+
+.cu-page {
+  overflow-x: clip;
+
+  .sr_only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  @media (max-width: 991px) {
+    .container {
+      max-width: 100%;
+      padding-inline: 2rem;
+    }
+  }
+}

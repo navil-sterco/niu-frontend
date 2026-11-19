@@ -1,0 +1,61 @@
+.pd-page {
+  .programs_menu {
+    background: var(--color_36);
+    position: sticky;
+    top: var(--site-header-height, 0px);
+    z-index: 99;
+  }
+  .programs_menu ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6.6rem;
+  }
+  .programs_menu ul li a {
+    display: inline-block;
+    font: var(--font18);
+    color: var(--color_white);
+    font-weight: var(--font_300);
+    line-height: 1.4;
+    padding-block: 2rem 1.8rem;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+    white-space: nowrap;
+    transition:
+      color 0.2s ease,
+      border-color 0.2s ease;
+  }
+  .programs_menu ul li a:hover {
+    color: var(--color_42);
+  }
+  .programs_menu ul li a.active {
+    color: var(--color_42);
+    border-bottom-color: var(--color_42);
+  }
+
+  @media (max-width: 1750px) {
+    .programs_menu ul {
+      gap: 3rem;
+      justify-content: space-between;
+    }
+  }
+  @media (max-width: 991px) {
+    .programs_menu ul {
+      justify-content: flex-start;
+      gap: 2.4rem;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    .programs_menu ul::-webkit-scrollbar {
+      display: none;
+    }
+    .programs_menu ul li {
+      flex: 0 0 auto;
+    }
+    .programs_menu ul li a {
+      font-size: 1.4rem;
+      padding-block: 1.6rem 1.4rem;
+    }
+  }
+}

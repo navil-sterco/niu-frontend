@@ -1,0 +1,166 @@
+
+.research {
+    padding-block: 12rem 18rem;
+    background: var(--color_ef);
+  }
+  .research .research_top {
+    align-items: flex-end;
+    margin-bottom: 3.1rem;
+  }
+  .research .heading h3 {
+    font: var(--font24);
+    font-weight: var(--font_600);
+    font-family: var(--dmsans);
+    margin-bottom: 3rem;
+  }
+  .research .heading blockquote {
+    font: var(--font45);
+    font-weight: var(--font_bold);
+    font-family: var(--dmsans);
+    letter-spacing: -0.1rem;
+    color: var(--color_46);
+  }
+  .research .btn_para .load_more {
+    margin: inherit;
+  }
+  .research .btn_para > p {
+    font: var(--font16);
+    font-family: var(--dmsans);
+    font-weight: var(--font_normal);
+    margin-bottom: 3rem;
+    padding-right: 5rem;
+  }
+  .research .rech_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3.5rem;
+  }
+  .research .rech_box {
+    position: relative;
+    overflow: hidden;
+  }
+  .research .rech_detl {
+    padding: 3.2rem 0 0 3.8rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .research .rech_detl p {
+    font: var(--font16);
+    font-family: var(--roboto);
+    font-weight: var(--font_normal);
+    max-width: 80%;
+  }
+  .research .rech_box:hover p {
+    color: var(--color_46);
+  }
+  .research .rech_box:hover .round_btn.btn_hovefct::before {
+    height: 100%;
+    top: 0;
+    background: var(--color_46);
+  }
+  .research .rech_box:hover .round_btn.btn_hovefct img {
+    filter: brightness(100);
+  }
+  
+  .research .rech_fact {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 0.1rem solid rgb(147 147 202 / 41%);
+    position: relative;
+    z-index: 1;
+    grid-gap: 10.6rem;
+    padding-top: 4.4rem;
+    margin-top: 4.7rem;
+  }
+  .research .rech_fact li {
+    position: relative;
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+  }
+  .research .rech_fact li p {
+    font: var(--font16);
+    font-weight: var(--font_300);
+    font-family: var(--dmsans);
+    color: var(--color_black);
+  }
+  .research .rech_fact li p span {
+    display: block;
+  }
+  .research .rech_fact li .counter {
+    font: var(--font50);
+    letter-spacing: -0.15rem;
+    font-family: var(--dmsans);
+    font-weight: var(--font_medium);
+    color: var(--color_46);
+  }
+  .research .rech_fact li .counter sup {
+    font: var(--font25);
+    letter-spacing: -0.38rem;
+    font-family: var(--dmsans);
+    font-weight: var(--font_500);
+    color: var(--color_62);
+    top: -2rem;
+  }
+  
+  @media (max-width: 1750px) {
+    .research {
+      padding-block: 8rem 12rem;
+    }
+    .research .heading h3 {
+      margin-bottom: 1.3rem;
+    }
+    .research .research_top {
+      gap: 10.5rem;
+      grid-template-columns: 458fr 846fr;
+      margin-bottom: 2.4rem;
+    }
+    .research .btn_para > p {
+      font: var(--font14_new);
+      margin-bottom: 1.4rem;
+      padding-right: 0;
+    }
+    .research .btn_para .load_more p {
+      border-color: var(--color_62);
+    }
+    .research .rech_grid {
+      grid-gap: 1.6rem;
+    }
+    .research .rech_box > figure > img {
+      aspect-ratio: 291/216;
+    }
+    .research .rech_detl {
+      padding: 1.7rem 0 0 0.6rem;
+    }
+    .research .rech_detl p {
+      max-width: 72%;
+    }
+    .research .rech_fact {
+      grid-gap: 5rem;
+      padding-top: 2.2rem;
+      margin-top: 2.2rem;
+    }
+    .research .rech_fact li .counter sup {
+      color: var(--color_46);
+      top: -1.7rem;
+    }
+    .research .rech_fact li {
+      gap: 1.6rem;
+      align-items: center;
+    }
+  } /*-----1750px-end----------*/
+  
+  @media (max-width: 1280px) {
+  } /*-----1280px-end----------*/
+  @media (max-width: 1199px) {
+  } /*-----1199px-end----------*/
+  @media (max-width: 991px) {
+  } /*-----991px-end----------*/
+  @media (max-width: 767px) {
+  } /*-----767px-end----------*/
+  @media (max-width: 575px) {
+  } /*-----575px-end----------*/
+  @media (max-width: 350px) {
+  } /*-----350px-end----------*/
+  /*----research-css-end----*/

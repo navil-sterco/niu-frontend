@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="path679" d="M0-682.665H45v45H0Z" transform="translate(0 682.665)"/>
+    </clipPath>
+  </defs>
+  <g id="g669" transform="translate(0 682.665)">
+    <g id="g671" transform="translate(11.953 -669.959)">
+      <path id="path673" d="M-298.905,0V5.737l-10.547,4.52L-320,5.737V0" transform="translate(319.999)" fill="none" stroke="#2f7246" stroke-width="2"/>
+    </g>
+    <g id="g675" transform="translate(0 -682.665)">
+      <g id="g677" clip-path="url(#clip-path)">
+        <g id="g683" transform="translate(4.043 1.433)">
+          <path id="path685" d="M-261.542,0-280,7.884l18.457,7.91,18.457-7.91Z" transform="translate(279.999)" fill="none" stroke="#2f7246" stroke-width="2"/>
+        </g>
+        <g id="g687" transform="translate(4.043 35.684)">
+          <path id="path689" d="M-523.085-74.726v-2.637A2.637,2.637,0,0,1-520.448-80h-35.6A3.955,3.955,0,0,0-560-76.045,4.031,4.031,0,0,0-556.044-72h35.6A2.713,2.713,0,0,1-523.085-74.726Z" transform="translate(559.999 80)" fill="none" stroke="#2f7246" stroke-width="2"/>
+        </g>
+        <g id="g691" transform="translate(1.406 27.773)">
+          <path id="path693" d="M-37.363-74.726v-2.637A2.637,2.637,0,0,0-40-80H-4.4A3.955,3.955,0,0,1-.449-76.045,3.955,3.955,0,0,1-4.4-72.09H-40A2.637,2.637,0,0,0-37.363-74.726Z" transform="translate(40 80)" fill="none" stroke="#2f7246" stroke-width="2"/>
+        </g>
+        <g id="g695" transform="translate(19.863 27.773)">
+          <path id="path697" d="M0-168.134V-180" transform="translate(0 180)" fill="none" stroke="#2f7246" stroke-width="2"/>
+        </g>
+        <g id="g699" transform="translate(38.32 10.446)">
+          <path id="path701" d="M0,0V13.372" fill="none" stroke="#2f7246" stroke-width="2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

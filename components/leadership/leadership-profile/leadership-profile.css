@@ -1,0 +1,21 @@
+.ld-page {
+  .leader_name { margin-top: 6.35rem; }
+  .leader_name h4 {
+    font: var(--font24);
+    color: var(--color_black);
+    font-weight: var(--font_300);
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+  }
+  .leader_name p {
+    font: var(--font18);
+    font-family: var(--dmsans);
+    font-weight: var(--font_300);
+    color: var(--color_black);
+    margin-bottom: 1.9rem;
+  }
+
+  @media (max-width: 991px) {
+    .leader_name { margin-top: 3rem; }
+  }
+}

@@ -1,0 +1,30 @@
+.pd-page {
+  .prog_overview_sec .eligibilty { padding-block: 14.8rem 13rem; }
+  .prog_overview_sec .eligibilty h4 { margin-bottom: 1.1rem; }
+  .prog_overview_sec .eligibilty blockquote {
+    font: var(--font46);
+    color: var(--color_1f);
+    font-weight: var(--font_medium);
+    line-height: 1;
+    letter-spacing: -0.74px;
+    margin-bottom: 2rem;
+  }
+  .prog_overview_sec .eligibilty blockquote span { color: var(--color_46); }
+  .eligibilty_cont {
+    background-color: var(--color_42);
+    padding-block: 1.6rem 1.6rem;
+    padding-inline: 5.5rem 6.4rem;
+    text-align: left;
+    max-width: 82rem;
+  }
+  .prog_overview_sec .eligibilty_cont p { margin: 0 0 1.2rem; }
+  .prog_overview_sec .eligibilty_cont p:last-child { margin-bottom: 0; }
+
+  @media (max-width: 2300px) { .prog_overview_sec .eligibilty { padding-block: 10rem 10rem; } }
+  @media (max-width: 1440px) { .prog_overview_sec .eligibilty { padding-block: 6rem 6rem; } }
+  @media (max-width: 991px) {
+    .prog_overview_sec .eligibilty { padding-block: 4rem 4rem; }
+    .prog_overview_sec .eligibilty blockquote { line-height: 1.2; }
+    .eligibilty_cont { padding-inline: 2.4rem; }
+  }
+}

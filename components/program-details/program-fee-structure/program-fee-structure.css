@@ -1,0 +1,82 @@
+/*
+  Note: your original used :nth-child(2n) / :nth-child(3n) on .total_list, which
+  only works when the girl <img> is the first child. They are now the explicit
+  modifiers .total_list--summary and .total_list--breakdown.
+*/
+.pd-page {
+  .fee_structure_bg {
+    padding-block: 6.5rem 10rem;
+    padding-inline: 23rem 0;
+    border-left: 16px solid;
+    border-image: linear-gradient(to bottom, #2f7246 65%, #e8bc42 35%) 1;
+    background-color: var(--color_white);
+  }
+  .fee_structure_cont h4 { font: var(--font26); color: var(--color_1f); font-weight: var(--font_bold); line-height: 1; margin-bottom: 1.9rem; }
+  .fee_structure_cont blockquote { font: var(--font46); color: var(--color_1f); font-weight: var(--font_medium); line-height: 1.2; margin-bottom: 3.2rem; letter-spacing: -0.74px; }
+  .fee_structure_cont blockquote span { color: var(--color_46); }
+  .fee_structure_cont p { font: var(--font18); color: var(--color_1f); font-weight: var(--font_normal); line-height: 1.6; margin-bottom: 1.6rem; }
+
+  .fee_structure_bx ul { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.8rem; max-width: 110rem; margin-top: 5rem; margin-bottom: 12.1rem; }
+  .fee_structure_bx ul li { text-align: center; background-color: var(--color_f6); padding-block: 3.3rem 4rem; padding-inline: 2.9rem 2.8rem; }
+  .fee_structure_bx ul li figure { margin-bottom: 2rem; min-width: 4.5rem; }
+  .fee_structure_bx ul li p { font: var(--font18); color: var(--color_1f); font-weight: var(--font_normal); line-height: 1.6; }
+
+  .total_program { display: grid; grid-template-columns: 516fr 600fr; position: relative; max-width: 116rem; }
+  .total_program.total_program--single { grid-template-columns: 1fr; }
+  .total_program .total_girl { position: absolute; left: -33rem; right: 0; margin: 0 auto; bottom: 0; }
+  .total_program .total_list--summary { background-color: var(--color_46); padding-block: 3.6rem 5.8rem; padding-inline: 4.5rem 0; }
+  .total_program .total_list--breakdown { background-color: var(--color_42); padding-block: 3.6rem 1.8rem; padding-inline: 9.6rem 6.5rem; }
+  .total_program .total_list--breakdown h4 { margin-bottom: 1.5rem; color: var(--color_1f); }
+  .total_list h4 { font: var(--font18); color: var(--color_white); font-weight: var(--font_600); line-height: 1.2; margin-bottom: 0.8rem; }
+  .total_list blockquote { font: var(--font42); color: var(--color_white); font-weight: var(--font_medium); line-height: 1.2; margin-bottom: 0.8rem; letter-spacing: -1.68px; }
+  .total_list p { font: var(--font16); font-weight: var(--font_300); line-height: 1.6; color: var(--color_white); }
+  .total_list .sticky_btn { justify-content: flex-start; margin-bottom: 0; margin-top: 5rem; }
+  .total_list h5 { display: flex; margin-top: 1.9rem; font: var(--font14); font-weight: var(--font_normal); color: var(--color_1f); white-space: nowrap; }
+  .total_list h5 span { display: inline-block; margin: 0 1rem; }
+
+  .fee-table { width: 100%; }
+  .fee-table table { width: 100%; border-collapse: collapse; font: var(--font16); font-family: var(--dmsans); line-height: 1.4; }
+  .fee-table td { padding: 1rem 2rem; border: 1px solid #0000001a; }
+  .fee-table td:first-child { border-right: 1px solid transparent; }
+  .fee-table td:last-child { max-width: 8rem; text-align: left; white-space: nowrap; }
+
+  @media (max-width: 2300px) { .total_program .total_girl { left: -30rem; } }
+  @media (max-width: 1750px) {
+    .fee_structure_bg { padding-block: 4.5rem 8rem; padding-inline: 7.5rem 0; }
+    .fee_structure_bx ul { margin-top: 4rem; margin-bottom: 9.1rem; }
+    .total_list h5 { display: inline-block; margin-top: 1rem; white-space: normal; }
+    .total_list h5 span { margin: 0 0.5rem; }
+    .total_program .total_list--breakdown { padding-block: 2.6rem 0.8rem; padding-inline: 11.6rem 2.5rem; }
+    .total_program .total_list--summary { padding-block: 2.6rem 3.8rem; padding-inline: 2.5rem 0; }
+    .fee-table td { padding: 1rem 1rem; }
+    .total_program .total_girl { left: -18rem; max-width: 31rem; }
+  }
+  @media (max-width: 1649px) { .total_program .total_girl { left: -17rem; max-width: 30rem; } }
+  @media (max-width: 1440px) {
+    .fee-table table { font: var(--font11); }
+    .total_list h5 { font: var(--font12); }
+    .total_list h4 { font: var(--font16); font-weight: var(--font_600); }
+    .total_list p { font: var(--font14); font-weight: var(--font_300); }
+    .total_program .total_girl { left: -14rem; max-width: 28rem; }
+  }
+  @media (max-width: 991px) {
+    .fee_structure .container-lg { padding-inline: 0; }
+    .fee_structure_bg { padding: 4rem 2rem 5rem; border-left-width: 8px; }
+    .fee_structure_cont blockquote { margin-bottom: 2rem; }
+    .fee_structure_bx ul { grid-template-columns: repeat(2, 1fr); margin-top: 3rem; margin-bottom: 4rem; }
+    .fee_structure_bx ul li { padding: 2.4rem 1.5rem; }
+    .total_program { grid-template-columns: 1fr; max-width: 100%; }
+    .total_program .total_girl { display: none; }
+    .total_program .total_list--summary,
+    .total_program .total_list--breakdown { padding: 3rem 2.4rem; }
+    .total_list .sticky_btn { margin-top: 3rem; }
+    .total_list h4 { font-size: 1.6rem; }
+    .total_list p { font-size: 1.4rem; }
+    .fee-table table { font-size: 1.4rem; }
+    .total_list h5 { font-size: 1.3rem; }
+    .total_list h5 span { margin: 0 0.8rem; }
+  }
+  @media (max-width: 575px) {
+    .fee_structure_bx ul { grid-template-columns: 1fr; }
+  }
+}

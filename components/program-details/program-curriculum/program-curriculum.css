@@ -1,0 +1,31 @@
+.pd-page {
+  .curriculam { padding-bottom: 14rem; }
+  .curri_cont h4 { font: var(--font26); color: var(--color_1f); font-weight: var(--font_bold); line-height: 1; margin-bottom: 1.5rem; }
+  .curri_cont blockquote { font: var(--font46); color: var(--color_1f); font-weight: var(--font_medium); line-height: 1.2; margin-bottom: 3.4rem; letter-spacing: -0.74px; }
+  .curri_cont ul { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.9rem; max-width: 110rem; }
+  .curri_cont ul li {
+    text-align: center;
+    background-color: var(--color_white);
+    padding-block: 4.9rem 3.5rem;
+    padding-inline: 4.9rem 3.8rem;
+    border: 1px solid #2f724645;
+    position: relative;
+  }
+  .curri_cont ul li figure { margin-bottom: 2.6rem; }
+  .curri_cont ul li p { font: var(--font18); color: var(--color_1f); font-weight: var(--font_normal); line-height: 1.6; }
+  .curri_cont ul li .semester_links { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+
+  @media (max-width: 1750px) {
+    .curriculam { padding-bottom: 10rem; }
+    .curri_cont ul { grid-template-columns: repeat(3, 1fr); }
+    .curri_cont ul li { padding-block: 3.9rem 2.5rem; padding-inline: 3.9rem 2.8rem; }
+    .curri_cont ul li figure { max-width: 3.5rem; margin: 0 auto 2.6rem; }
+  }
+  @media (max-width: 991px) {
+    .curriculam { padding-bottom: 5rem; }
+    .curri_cont blockquote { margin-bottom: 2.4rem; }
+    .curri_cont ul { grid-template-columns: repeat(2, 1fr); }
+    .curri_cont ul li { padding: 2.5rem 1.5rem; }
+    .curri_cont ul li p { font-size: 1.5rem; }
+  }
+}

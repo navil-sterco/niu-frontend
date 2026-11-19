@@ -1,0 +1,265 @@
+.hapening {
+    width: 100%;
+    height: auto;
+    background: var(--color_4b);
+    padding-block: 10rem;
+}
+
+.hapening .heading {
+    margin-bottom: 8.2rem;
+    text-align: center;
+}
+
+.hapening .heading>h5 {
+    color: var(--color_white);
+}
+
+.hapening .alum_grid {
+    display: grid;
+    grid-template-columns: 942fr 950fr;
+    grid-gap: 0.4rem;
+}
+
+.hapening .hpsm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.4rem;
+    height: 100%;
+}
+
+.hapening .hpdetail h5 {
+    font: var(--font18);
+    font-weight: var(--font_200);
+    font-family: var(--dmsans);
+    margin-bottom: 2rem;
+    color: var(--color_white);
+    line-height: 1.35;
+}
+
+.hapening .hpdetail p {
+    font: var(--font21);
+    font-weight: var(--font_300);
+    font-family: var(--dmsans);
+    color: var(--color_white);
+}
+
+.hapening .hplg>figure,
+.hapening .hpsm>figure {
+    display: grid;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.hapening .hplg>figure>img,
+.hapening .hpsm>figure>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hapening .hplg>figure::before,
+.hapening .hpsm>figure::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 34%;
+    background: linear-gradient(0deg,
+            rgb(0 0 0 / 50%) 0%,
+            rgba(237, 221, 83, 0) 100%);
+    content: "";
+}
+
+.hapening .hplg>figure>*,
+.hapening .hpsm>figure>* {
+    grid-area: 1/1;
+}
+
+.hapening .hplg>figure>figcaption,
+.hapening .hpsm>figure>figcaption {
+    padding: 3rem 5.9rem 3rem 4.3rem;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.hapening .hpsm>figure>figcaption:has(.date_link) {
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hapening .hpsm .date_link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hapening .hpsm .date {
+    display: flex;
+    align-items: center;
+}
+
+.hapening .hpsm .date p {
+    display: flex;
+    flex-flow: column;
+    font: var(--font24);
+    font-family: var(--dmsans);
+    font-weight: var(--font_normal);
+    color: var(--color_white);
+    line-height: 0.9;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 0.1rem solid var(--color_white);
+    color: var(--color_white);
+}
+
+.hapening .date_link .date h5 {
+    font: var(--font32);
+    font-family: var(--dmsans);
+    font-weight: var(--font_normal);
+    display: inline-flex;
+    color: var(--color_white);
+}
+
+.hapening .hpdetail .hpheading {
+    font: var(--font21);
+    letter-spacing: 0.414rem;
+    font-family: var(--dmsans);
+    font-weight: var(--font_900);
+    color: var(--color_white);
+    line-height: 1;
+}
+
+.hapening .hpdetail blockquote {
+    font: var(--font50);
+    font-family: var(--dmsans);
+    font-weight: var(--font_900);
+    color: var(--color_white);
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.hapening .hpdetail blockquote span {
+    display: block;
+}
+
+.hapening .hplg:hover .hpdetail h5,
+.hapening .hplg:hover .hpdetail p,
+.hapening .hpsm>figure:hover .hpheading,
+.hapening .hpsm>figure:hover blockquote,
+.hapening .hpsm>figure:hover .hpdetail h5,
+.hapening .hpsm>figure:hover .hpdetail p {
+    color: var(--color_29);
+}
+
+.hapening .hpsm>figure:hover .btn_hovefct:before {
+    height: 100%;
+    top: 0;
+    background: var(--color_46);
+}
+
+.hapening .load_more {
+    margin-top: 7rem;
+}
+
+.hapening .load_more .line {
+    background: var(--color_29);
+}
+
+.hapening .load_more p {
+    color: var(--color_white);
+    border-color: var(--color_29);
+}
+
+.hapening .load_more:hover p {
+    color: var(--color_29);
+}
+
+@media (max-width: 1750px) {
+    .hapening {
+        padding-block: 5.3rem 4rem;
+    }
+
+    .hapening .heading {
+        margin-bottom: 4.4rem;
+    }
+
+    .hapening .alum_grid {
+        grid-template-columns: 913fr 950fr;
+        grid-gap: 0.3rem;
+    }
+
+    .hapening .hplg>figure>img,
+    .hapening .hpsm>figure>img {
+        aspect-ratio: 2 / 1.461;
+    }
+
+    .hapening .hplg>figure>figcaption,
+    .hapening .hpsm>figure>figcaption {
+        padding: 1.9rem 2.1rem;
+    }
+
+    .hapening .hpdetail h5,
+    .hapening .hpdetail p {
+        font: var(--font14_new);
+        font-weight: var(--font_300);
+        margin-bottom: 1rem;
+    }
+
+    .hapening .hpsm .date p {
+        font: var(--font18);
+        margin-left: 0.5rem;
+        padding-left: 0.5rem;
+        font-family: var(--dmsans);
+        font-weight: var(--font_normal);
+        line-height: 0.9;
+    }
+
+    .hapening .hpsm .date_link .left_btn.btn_hovefct {
+        display: none;
+    }
+
+    .hapening .hpdetail .hpheading {
+        font: var(--font11);
+        font-weight: var(--font_900);
+        letter-spacing: 0.121rem;
+    }
+
+    .hapening .hpdetail blockquote {
+        font: var(--font27);
+        font-weight: var(--font_900);
+    }
+
+    .hapening .hpsm>figure::before {
+        height: 70%;
+    }
+
+    .hapening .load_more {
+        margin-top: 3.8rem;
+    }
+}
+
+/*-----1750px-end----------*/
+
+@media (max-width: 1280px) {}
+
+/*-----1280px-end----------*/
+@media (max-width: 1199px) {}
+
+/*-----1199px-end----------*/
+@media (max-width: 991px) {}
+
+/*-----991px-end----------*/
+@media (max-width: 767px) {}
+
+/*-----767px-end----------*/
+@media (max-width: 575px) {}
+
+/*-----575px-end----------*/
+@media (max-width: 350px) {}
+
+/*-----350px-end----------*/
+/*----hapening-css-end----*/

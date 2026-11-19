@@ -1,0 +1,389 @@
+.mob_only {
+  display: none;
+}
+
+.admison_menu.is-open .admsion_wrap,
+.admison_menu:focus-within .admsion_wrap {
+  opacity: 1;
+  display: block;
+}
+body:has(.admison_menu.is-open)::after {
+  opacity: 0.71;
+  visibility: visible;
+}
+body:has(.admison_menu.is-open) header:not(header.sticky) .main_logo .color_logo,
+body:has(.admison_menu.is-open) header:not(header.sticky) .nac_logo .color_logo {
+  display: none;
+}
+body:has(.admison_menu.is-open) header:not(header.sticky) .main_logo .white_logo,
+body:has(.admison_menu.is-open) header:not(header.sticky) .nac_logo .white_logo {
+  display: block;
+}
+body:has(.admison_menu.is-open) header:not(header.sticky) .navbar_nav .nav-item .nav-link {
+  color: var(--color_white);
+}
+body:has(.admison_menu.is-open) .admison_menu > .nav-link {
+  color: var(--color_42) !important;
+}
+
+header .navbar_nav .nav-item .nav-link {
+  white-space: nowrap;
+}
+.admsion_wrap {
+  max-width: calc(100vw - 2rem);
+}
+
+
+body:has(.admison_menu:hover) .inner_header:not(.schol_header):not(.sticky) .main_logo .color_logo,
+body:has(.admison_menu:hover) .inner_header:not(.schol_header):not(.sticky) .nac_logo .color_logo,
+body:has(.admison_menu.is-open) .inner_header:not(.schol_header):not(.sticky) .main_logo .color_logo,
+body:has(.admison_menu.is-open) .inner_header:not(.schol_header):not(.sticky) .nac_logo .color_logo {
+  display: block;
+}
+body:has(.admison_menu:hover) .inner_header:not(.schol_header):not(.sticky) .main_logo .white_logo,
+body:has(.admison_menu:hover) .inner_header:not(.schol_header):not(.sticky) .nac_logo .white_logo,
+body:has(.admison_menu.is-open) .inner_header:not(.schol_header):not(.sticky) .main_logo .white_logo,
+body:has(.admison_menu.is-open) .inner_header:not(.schol_header):not(.sticky) .nac_logo .white_logo {
+  display: none;
+}
+body:has(.admison_menu:hover) .inner_header:not(.schol_header) .navbar_nav .nav-item .nav-link,
+body:has(.admison_menu.is-open) .inner_header:not(.schol_header) .navbar_nav .nav-item .nav-link {
+  color: var(--color_black);
+}
+
+header.sticky {
+  box-shadow: 0 0.4rem 2rem rgb(0 0 0 / 8%);
+}
+
+.hembugrside_menu {
+  height: calc(100dvh - 3rem);
+  max-width: calc(100vw - 2rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+.hembugrside_menu:not(.open-slide) {
+  pointer-events: none;
+  visibility: hidden;
+  transition: 0.5s ease-in-out, visibility 0s 0.5s;
+}
+.hembugrside_menu .mobmenu_top .mob_dropdown.active .second_level {
+  display: block;
+  animation: hdr-fade 0.3s ease;
+}
+.hembugrside_menu .mobmenu_top li.mob_dropdown > a {
+  cursor: pointer;
+}
+@keyframes hdr-fade {
+  from {
+    opacity: 0;
+    transform: translateY(-0.6rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.search_form:not(.active) {
+  visibility: hidden;
+  transition: all 0.5s ease, visibility 0s 0.5s;
+}
+.search_form .form-group {
+  display: block;
+}
+
+header a:focus-visible,
+header [role="button"]:focus-visible,
+header input:focus-visible {
+  outline: 0.2rem solid var(--color_42);
+  outline-offset: 0.3rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  header,
+  .hembugrside_menu,
+  .opacity_bg,
+  .search_form {
+    transition: none !important;
+  }
+  .hembugrside_menu .mobmenu_top .mob_dropdown.active .second_level {
+    animation: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  header .navbar-brand {
+    max-width: 24rem;
+    gap: 1rem;
+  }
+  header .navbar-brand > a:nth-child(1) {
+    max-width: 17rem;
+    padding-right: 1rem;
+  }
+  header .navbar-brand .nac_logo {
+    width: 7rem;
+  }
+  header .navbar_nav .nav-item:not(:last-child),
+  .inner_header .navbar_nav .nav-item:not(:last-child) {
+    margin-right: 1.8rem;
+  }
+  header .navbar_nav .nav-item .nav-link,
+  .inner_header .navbar_nav .nav-item .nav-link {
+    font-size: 1.4rem;
+  }
+  .inner_header .navbar_nav .nav-item .nav-link:not(.hemburgure) > img {
+    width: 0.8rem; /* small chevrons – the hamburger icon is NOT one of them */
+  }
+  .inner_header .navbar_nav .nav-item .hemburgure img {
+    width: 1.8rem;
+  }
+  .side_menu {
+    right: 1.2rem;
+  }
+  header.home_header .container-fluid {
+    max-width: 88vw;
+  }
+  .admsion_wrap,
+  .inner_header .admsion_wrap {
+    width: min(70rem, 92vw);
+    right: -1rem;
+  }
+  .admsion_wrap .top_menu {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    max-width: none;
+  }
+  .admsion_wrap .botm_menu {
+    width: calc(100% - 4rem);
+    margin-inline: 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .mob_only {
+    display: block;
+  }
+
+  header,
+  header.sticky {
+    padding-block: 1.4rem;
+  }
+  .inner_header {
+    border-top-width: 0.5rem;
+    padding-block: 1.4rem 1.2rem;
+  }
+  .inner_header.sticky,
+  .schol_header.sticky {
+    padding-block: 1rem;
+    border-top-width: 0.3rem;
+  }
+  .schol_header {
+    border-top-width: 0.3rem;
+    padding-block: 1.4rem;
+  }
+
+  header .container-fluid,
+  .inner_header > .container-md {
+    flex-wrap: nowrap;
+    align-items: center;
+    max-width: none;
+    padding-inline: 1.6rem;
+  }
+  header.home_header .container-fluid {
+    max-width: none;
+  }
+
+  /* logos */
+  header .navbar-brand {
+    max-width: none;
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+  header .navbar-brand > a:nth-child(1),
+  .inner_header .navbar-brand > a:nth-child(1),
+  .schol_header .navbar-brand > a:nth-child(1),
+  .inner_header.sticky .navbar-brand > a:nth-child(1) {
+    width: 19rem;
+    max-width: 19rem;
+    padding-right: 1rem;
+  }
+  header .navbar-brand .nac_logo,
+  .inner_header.sticky .navbar-brand > a:nth-child(2) {
+    width: 7.2rem;
+  }
+
+  .home_header .navbar_nav,
+  .inner_header .navbar_nav .nav-item:not(.hemburgure_item) {
+    display: none;
+  }
+  .inner_header .navbar_nav .nav-item .nav-link {
+    margin-bottom: 0;
+  }
+  .inner_header .navbar_nav .hemburgure,
+  .schol_header .navbar_nav .hemburgure {
+    border-left: 0;
+    padding: 0.8rem 0 0.8rem 0.8rem;
+    display: flex;
+  }
+  .inner_header .navbar_nav .nav-item .hemburgure img {
+    width: 2.6rem;
+  }
+  .inner_header .tolfree {
+    display: none; /* the number is inside the slide menu on small screens */
+  }
+  .admison_menu {
+    display: none;
+  }
+
+  /* home header icons: menu + search in the bar, WhatsApp floats, info is hidden */
+  .side_menu {
+    top: 50%;
+    right: 1.6rem;
+    margin-top: -1.5rem;
+    flex-flow: row;
+    gap: 1.8rem;
+  }
+  header.home_header.sticky .side_menu {
+    top: 50%;
+  }
+  .side_menu li[data-mobile] a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3.2rem;
+    min-height: 3.2rem;
+  }
+  .side_menu li[data-mobile] a img {
+    width: 2.6rem;
+  }
+  .side_menu li[data-mobile="hide"] {
+    display: none;
+  }
+  .side_menu li[data-mobile="float"] {
+    position: fixed;
+    right: 1.6rem;
+    bottom: 2rem;
+    z-index: 90;
+  }
+  .side_menu li[data-mobile="float"] a {
+    width: 5.4rem;
+    height: 5.4rem;
+    border-radius: 50%;
+    background: var(--color_white);
+    box-shadow: 0 0.6rem 2rem rgb(0 0 0 / 25%);
+  }
+  .side_menu li[data-mobile="float"] a img {
+    width: 3rem;
+  }
+
+  /* slide menu */
+  .hembugrside_menu {
+    width: 36rem;
+    top: 1rem;
+    height: calc(100dvh - 2rem);
+    padding-top: 3.6rem;
+  }
+  .hembugrside_menu.open-slide {
+    right: 1rem;
+  }
+  .hembugrside_menu .mobmenu_top li a {
+    padding-block: 1.8rem;
+  }
+  .hembugrside_menu .mobmenu_top li.mob_only:first-child a,
+  .hembugrside_menu .mobmenu_top li:first-child a {
+    border-top: 0;
+  }
+  .hembugrside_menu .mobmenu_top li a:has(img) {
+    align-items: center;
+  }
+
+  /* search bar */
+  .search_form {
+    padding: 2.6rem 6.4rem 2.6rem 1.6rem;
+  }
+  .search_form .form-group {
+    max-width: none;
+  }
+  .search_form .search-close {
+    right: 1.2rem;
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+}
+
+/* ---------------- ≤ 767px : large phone ---------------- */
+@media (max-width: 767px) {
+  header .navbar-brand > a:nth-child(1),
+  .inner_header .navbar-brand > a:nth-child(1),
+  .schol_header .navbar-brand > a:nth-child(1),
+  .inner_header.sticky .navbar-brand > a:nth-child(1) {
+    width: 16.5rem;
+    max-width: 16.5rem;
+  }
+  header .navbar-brand .nac_logo,
+  .inner_header.sticky .navbar-brand > a:nth-child(2) {
+    width: 6.2rem;
+  }
+  .search_form .form-group .form-control {
+    font-size: 1.6rem;
+    padding: 1.3rem 1.4rem;
+  }
+  .search_form .form-group input.btn {
+    width: 5rem;
+  }
+}
+
+/* ---------------- ≤ 575px : phone ---------------- */
+@media (max-width: 575px) {
+  header,
+  header.sticky {
+    padding-block: 1.1rem;
+  }
+  .inner_header {
+    border-top-width: 0.4rem;
+    padding-block: 1.1rem 1rem;
+  }
+  header .container-fluid,
+  .inner_header > .container-md {
+    padding-inline: 1.2rem;
+  }
+  header .navbar-brand > a:nth-child(1),
+  .inner_header .navbar-brand > a:nth-child(1),
+  .schol_header .navbar-brand > a:nth-child(1),
+  .inner_header.sticky .navbar-brand > a:nth-child(1) {
+    width: 14rem;
+    max-width: 14rem;
+  }
+  header .navbar-brand .nac_logo,
+  .inner_header.sticky .navbar-brand > a:nth-child(2) {
+    width: 5.4rem;
+  }
+  .side_menu {
+    right: 1.2rem;
+    gap: 1.2rem;
+  }
+  .side_menu li[data-mobile] a img {
+    width: 2.3rem;
+  }
+  .hembugrside_menu {
+    width: calc(100vw - 2rem);
+  }
+}
+
+/* ---------------- ≤ 380px : small phone ---------------- */
+@media (max-width: 380px) {
+  header .navbar-brand > a:nth-child(1),
+  .inner_header .navbar-brand > a:nth-child(1),
+  .schol_header .navbar-brand > a:nth-child(1),
+  .inner_header.sticky .navbar-brand > a:nth-child(1) {
+    width: 12rem;
+    max-width: 12rem;
+  }
+  header .navbar-brand .nac_logo {
+    width: 4.8rem;
+  }
+  .hembugrside_menu .mobmenu_top li a {
+    padding-block: 1.5rem;
+  }
+}

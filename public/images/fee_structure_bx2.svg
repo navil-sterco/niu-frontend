@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="path21" d="M0-682.665H45v45H0Z" transform="translate(0 682.665)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="employee" transform="translate(0 -0.002)">
+    <g id="g15" transform="translate(0 0.002)">
+      <g id="g17" transform="translate(0 0)">
+        <g id="g19" clip-path="url(#clip-path)">
+          <g id="g25" transform="translate(25.928 25.928)">
+            <path id="path27" d="M-214.216,0H-226.7a2.637,2.637,0,0,0-2.637,2.637V6.152h17.754V2.637A2.637,2.637,0,0,0-214.216,0Z" transform="translate(229.333)" fill="none" stroke="#2f7246" stroke-width="2"/>
+          </g>
+          <g id="g29" transform="translate(31.289 20.654)">
+            <path id="path31" d="M-74.726,0h-3.516A1.758,1.758,0,0,0-80,1.758V5.273h7.031V1.758A1.758,1.758,0,0,0-74.726,0Z" transform="translate(80 0)" fill="none" stroke="#2f7246" stroke-width="2"/>
+          </g>
+          <g id="g33" transform="translate(25.928 32.08)">
+            <path id="path35" d="M-251.579,0V6.328a2.637,2.637,0,0,1-2.637,2.637H-266.7a2.637,2.637,0,0,1-2.637-2.637V0Z" transform="translate(269.333)" fill="none" stroke="#2f7246" stroke-width="2"/>
+          </g>
+          <g id="g37" transform="translate(8.35 3.955)">
+            <path id="path39" d="M-249.088-124.544a8.789,8.789,0,0,1-8.789,8.789,8.789,8.789,0,0,1-8.789-8.789,8.789,8.789,0,0,1,8.789-8.789A8.789,8.789,0,0,1-249.088-124.544Z" transform="translate(266.666 133.333)" fill="none" stroke="#2f7246" stroke-width="2"/>
+          </g>
+          <g id="g41" transform="translate(14.062 21.533)">
+            <path id="path43" d="M0,0,.879,5.273H5.273L6.152,0Z" fill="none" stroke="#2f7246" stroke-width="2"/>
+          </g>
+          <g id="g45" transform="translate(1.318 21.533)">
+            <path id="path47" d="M-420.3-62.272a10.533,10.533,0,0,0-8.567-4.395h-10.547A10.547,10.547,0,0,0-449.962-56.12v8.965h31.641" transform="translate(449.962 66.667)" fill="none" stroke="#2f7246" stroke-width="2"/>
+          </g>
+          <g id="g49" transform="translate(13.623 26.807)">
+            <path id="path51" d="M-80.954,0h-4.395l-1.318,9.844,3.516,4.395,3.516-4.395Z" transform="translate(86.666)" fill="none" stroke="#2f7246" stroke-width="2"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

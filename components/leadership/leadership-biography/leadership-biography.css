@@ -1,0 +1,21 @@
+.ld-page {
+  .ldrbtm_cont p {
+    font: var(--font18);
+    font-family: var(--dmsans);
+    font-weight: var(--font_400);
+    margin-bottom: 3rem;
+    color: var(--color_1f);
+  }
+  .ldrbtm_cont { padding-right: 1rem; }
+
+  @media (max-width: 1950px) {
+    .ldrbtm_cont { padding-left: 9rem; }
+  }
+  @media (max-width: 1750px) {
+    .ldrbtm_cont { padding-left: 0; }
+  }
+  @media (max-width: 991px) {
+    .ldrbtm_cont { padding-right: 0; }
+    .ldrbtm_cont p { font-size: 1.5rem; margin-bottom: 2rem; }
+  }
+}

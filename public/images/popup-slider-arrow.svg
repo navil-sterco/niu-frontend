@@ -1,0 +1,15 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46" width="46" height="46">
+	<style>
+		.s0 { fill: none } 
+		.s1 { fill: none;stroke: #ffffff;stroke-width: 1 } 
+	</style>
+	<g id="Group_29709">
+		<g>
+			<g id="Rectangle_156-2">
+				<path fill-rule="evenodd" class="s0" d="m44.46 0.91v43.67h-43.67v-43.67z"/>
+				<path fill-rule="evenodd" class="s1" d="m43.96 1.4v42.68h-42.68v-42.68z"/>
+			</g>
+		</g>
+		<path id="Path_826" class="s1" d="m18.5 14.43l7.58 7.57-7.58 7.58"/>
+	</g>
+</svg>

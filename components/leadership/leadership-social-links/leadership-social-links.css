@@ -1,0 +1,7 @@
+.ld-page {
+  .leader_social { display: flex; align-items: center; gap: 1.2rem; }
+  .leader_social a { display: inline-flex; align-items: center; color: var(--color_black); }
+  .leader_social a img,
+  .leader_social a svg { width: 2rem; height: 2rem; }
+  .leader_social a:focus-visible { outline: 2px solid var(--color_46); outline-offset: 3px; }
+}

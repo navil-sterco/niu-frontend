@@ -1,0 +1,19 @@
+:where(.ld-page .container, .ld-page .container-md) { margin-inline: auto; }
+:where(.ld-page .img-fluid) { max-width: 100%; height: auto; }
+:where(.ld-page .w-100) { width: 100%; }
+
+:where(.ld-page .cms-html) { max-width: 100%; overflow-wrap: break-word; }
+:where(.ld-page .cms-html) :where(ul, ol) { margin: 0 0 3rem; padding-left: 2.4rem; }
+:where(.ld-page .cms-html) :where(ul) { list-style: disc; }
+:where(.ld-page .cms-html) :where(ol) { list-style: decimal; }
+:where(.ld-page .cms-html) :where(a) { text-decoration: underline; }
+:where(.ld-page .cms-html) :where(img) { max-width: 100%; height: auto; }
+
+.ld-page {
+  overflow-x: clip;
+
+  @media (max-width: 991px) {
+    .container,
+    .container-md { max-width: 100%; padding-inline: 2rem; margin-inline: auto; }
+  }
+}

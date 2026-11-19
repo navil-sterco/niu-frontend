@@ -1,0 +1,124 @@
+.ov-page {
+  .philosy {
+    background-color: var(--color_f7);
+    position: relative;
+  }
+  .philosy_grid {
+    display: grid;
+    grid-template-columns: 51rem auto;
+    gap: 9.8rem;
+    align-items: center;
+  }
+  .philosy_content h4 {
+    font: var(--font26);
+    font-weight: var(--font_bold);
+    font-family: var(--dmsans);
+    color: var(--color_20);
+    margin-bottom: 3rem;
+  }
+  .philosy_content blockquote {
+    font: var(--font36);
+    font-weight: var(--font_medium);
+    font-family: var(--dmsans);
+    color: var(--color_1f);
+    margin-bottom: 3rem;
+    letter-spacing: -0.58px;
+  }
+  .philosy_content p {
+    font: var(--font18);
+    font-weight: var(--font_400);
+    font-family: var(--dmsans);
+    color: var(--color_1f);
+    margin-bottom: 3rem;
+  }
+  .philosy:after {
+    content: "";
+    position: absolute;
+    left: auto;
+    right: 0;
+    background-color: var(--color_42);
+    height: 100%;
+    width: 84.9rem;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .philosy_grid > figure {
+    position: relative;
+    z-index: 2;
+    margin-right: -26rem;
+  }
+  .philosy_content {
+    margin-right: 3.9rem;
+  }
+
+  @media (max-width: 1950px) {
+    .philosy:after {
+      width: 78.9rem;
+    }
+    .philosy_grid > figure {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 1750px) {
+    .philosy_content {
+      margin-right: 0;
+    }
+    .philosy .philosy_content blockquote {
+      margin-right: 3rem;
+    }
+    .philosy_grid {
+      grid-template-columns: 30rem auto;
+      gap: 5.8rem;
+    }
+    .philosy:after {
+      width: 69.9rem;
+    }
+  }
+  @media (max-width: 1649px) {
+    .philosy:after {
+      width: 65rem;
+    }
+  }
+  @media (max-width: 1440px) {
+    .philosy:after {
+      width: 54.5rem;
+    }
+  }
+  @media (max-width: 1366px) {
+    .philosy:after {
+      width: 51rem;
+    }
+  }
+
+  /* Tablet / mobile: text first, image below over a yellow band */
+  @media (max-width: 991px) {
+    .philosy {
+      padding-top: 4rem;
+    }
+    .philosy_grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    .philosy .philosy_content blockquote {
+      margin-right: 0;
+    }
+    .philosy:after {
+      top: auto;
+      width: 100%;
+      height: 45%;
+    }
+  }
+
+  /* No image */
+  .philosy.philosy--no-image {
+    padding-block: 5rem;
+  }
+  .philosy.philosy--no-image:after {
+    display: none;
+  }
+  .philosy_grid.philosy_grid--no-image {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,114 @@
+.ov-page {
+  .abt_vision {
+    padding-block: 12rem 14rem;
+    background-color: var(--color_f7);
+  }
+  .vision_grid {
+    display: grid;
+    grid-template-columns: 82rem auto;
+    gap: 14rem;
+  }
+  .abt_vision_ttl h4 {
+    font: var(--font26);
+    font-weight: var(--font_bold);
+    font-family: var(--dmsans);
+    color: var(--color_20);
+    margin-bottom: 3rem;
+  }
+  .abt_vision_ttl blockquote {
+    font: var(--font36);
+    font-weight: var(--font_medium);
+    font-family: var(--dmsans);
+    color: var(--color_1f);
+    margin-bottom: 3rem;
+    letter-spacing: -0.58px;
+  }
+  .abt_vision_ttl {
+    margin-bottom: 8rem;
+  }
+  .vision_list h5 {
+    font: var(--font26);
+    font-weight: var(--font_bold);
+    font-family: var(--dmsans);
+    color: var(--color_20);
+    margin-bottom: 5.3rem;
+  }
+  .vision_list ul li {
+    position: relative;
+    margin-bottom: 3rem;
+    font: var(--font18);
+    font-weight: var(--font_400);
+    font-family: var(--dmsans);
+    color: var(--color_1f);
+    padding-left: 2.2rem;
+  }
+  .vision_list ul li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    background-color: #e8bc42;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  .vision_list {
+    margin-right: 2rem;
+  }
+
+  @media (max-width: 1950px) {
+    .abt_vision_ttl {
+      margin-right: 18rem;
+    }
+    .vision_list {
+      margin-right: 19rem;
+    }
+  }
+  @media (max-width: 1750px) {
+    .abt_vision_ttl {
+      margin-right: 11rem;
+    }
+    .vision_grid {
+      grid-template-columns: 53rem auto;
+      gap: 5.8rem;
+    }
+    .vision_list {
+      margin-right: 0;
+    }
+    .vision_list h5 {
+      margin-bottom: 3.3rem;
+    }
+    .abt_vision_ttl {
+      margin-bottom: 5rem;
+    }
+    .abt_vision {
+      padding-block: 10rem 10rem;
+    }
+  }
+
+  /* Tablet / mobile */
+  @media (max-width: 991px) {
+    .abt_vision {
+      padding-block: 5rem;
+    }
+    .abt_vision_ttl {
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
+    .vision_grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    .vision_list h5 {
+      margin-bottom: 2rem;
+    }
+    .vision_list ul li {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .vision_grid.vision_grid--no-image {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,36 @@
+.cu-page {
+  .contact-us {
+    padding-block: 10rem 0;
+    background-color: var(--color_f7);
+    overflow: hidden;
+  }
+  .contact_grid {
+    display: grid;
+    grid-template-columns: auto 138.3fr;
+    gap: 8.3rem;
+  }
+
+  @media (max-width: 1950px) {
+    .contact-us {
+      padding-block: 8rem 0;
+    }
+  }
+  @media (max-width: 1750px) {
+    .contact_grid {
+      gap: 4.3rem;
+    }
+  }
+  @media (max-width: 991px) {
+    .contact-us {
+      padding-block: 5rem 0;
+    }
+    .contact_grid {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+    .contact-us .max-container {
+      margin-inline: auto;
+      padding-inline: 2rem;
+    }
+  }
+}

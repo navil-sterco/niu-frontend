@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="46.508" viewBox="0 0 47 46.508">
+  <g id="core-value" transform="translate(-10 -10.492)">
+    <g id="Group_30597" data-name="Group 30597" transform="translate(11 11)">
+      <path id="Path_25032" data-name="Path 25032" d="M22.777,159.145l-6.569-6.081-.392-10.105A4.318,4.318,0,0,0,11,138.83v16.518a3.5,3.5,0,0,0,.745,2.083l7.6,9.932v4.723H30.565v-7.828c0-4.971-1.634-6.395-4.183-8.531l-4.68-3.921a2.327,2.327,0,0,0-3.16,3.417" transform="translate(-11 -127.087)" fill="none" stroke="#2f7246" stroke-width="2" fill-rule="evenodd"/>
+      <path id="Path_25033" data-name="Path 25033" d="M299.981,155.224a2.327,2.327,0,0,0-3.16-3.417l-4.68,3.921c-2.549,2.136-4.183,3.559-4.183,8.531v7.828h11.217v-4.723l7.6-9.932a3.5,3.5,0,0,0,.745-2.083V138.83a4.318,4.318,0,0,0-4.817,4.129l-.392,10.105-6.569,6.081" transform="translate(-262.522 -127.087)" fill="none" stroke="#2f7246" stroke-width="2" fill-rule="evenodd"/>
+      <line id="Line_1739" data-name="Line 1739" x2="1.534" y2="1.214" transform="translate(8.593 2.836)" fill="none" stroke="#2f7246" stroke-width="2"/>
+      <line id="Line_1740" data-name="Line 1740" x2="1.869" y2="0.579" transform="translate(6.782 7.499)" fill="none" stroke="#2f7246" stroke-width="2"/>
+      <line id="Line_1741" data-name="Line 1741" x2="0.993" y2="1.686" transform="translate(12.714 0)" fill="none" stroke="#2f7246" stroke-width="2"/>
+      <line id="Line_1742" data-name="Line 1742" x1="1.534" y2="1.214" transform="translate(34.872 2.836)" fill="none" stroke="#2f7246" stroke-width="2"/>
+      <line id="Line_1743" data-name="Line 1743" x1="1.869" y2="0.579" transform="translate(36.349 7.499)" fill="none" stroke="#2f7246" stroke-width="2"/>
+      <line id="Line_1744" data-name="Line 1744" x1="0.993" y2="1.686" transform="translate(31.292 0)" fill="none" stroke="#2f7246" stroke-width="2"/>
+    </g>
+    <path id="Path_25034" data-name="Path 25034" d="M163.959,56.063l2.019,3.894,4.333.717a1.807,1.807,0,0,1,.973,3.069l-3.063,3.106.658,4.353a1.807,1.807,0,0,1-2.73,1.81l-3.8-1.9-3.934,1.97a1.808,1.808,0,0,1-2.593-1.879l.658-4.353L153.4,63.719a1.806,1.806,0,0,1,1-3.045l4.333-.718,2.022-3.9A1.806,1.806,0,0,1,163.959,56.063Z" transform="translate(-128.849 -40.032)" fill="none" stroke="#2f7246" stroke-width="2" fill-rule="evenodd"/>
+  </g>
+</svg>

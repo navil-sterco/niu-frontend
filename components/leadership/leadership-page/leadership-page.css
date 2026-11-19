@@ -1,0 +1,22 @@
+.ld-page {
+  .leadership {
+    padding-block: 6rem 10.6rem;
+    background-color: var(--color_f7);
+  }
+  .lead_cont p {
+    font: var(--font28);
+    color: var(--color_20);
+    font-family: var(--dmsans);
+    font-weight: var(--font_300);
+  }
+
+  @media (max-width: 1950px) {
+    .leadership .lead_cont { max-width: 90%; }
+  }
+  @media (max-width: 1750px) {
+    .leadership .lead_cont { max-width: 100%; }
+  }
+  @media (max-width: 991px) {
+    .leadership { padding-block: 4rem 6rem; }
+  }
+}

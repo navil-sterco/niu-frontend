@@ -1,0 +1,33 @@
+.ld-page {
+  .common_title h1 {
+    font: var(--font24);
+    color: var(--color_1f);
+    font-weight: var(--font_600);
+    line-height: 1.5;
+    margin-bottom: 1.6rem;
+  }
+  .common_title blockquote {
+    font: var(--font45);
+    color: var(--color_46);
+    font-weight: var(--font_bold);
+    line-height: 1.24;
+    font-family: var(--dmsans);
+  }
+  .common_head {
+    background-color: var(--color_white);
+    padding-block: 10.95rem 8.29rem;
+    position: relative;
+    z-index: 9;
+  }
+
+  @media (max-width: 1440px) {
+    .common_head { padding-block: 6.95rem 4.29rem; }
+  }
+  @media (max-width: 1366px) {
+    .common_head { padding-block: 8.95rem 6.29rem; }
+  }
+  @media (max-width: 991px) {
+    .common_head { padding-block: 4.5rem 3.5rem; }
+    .common_title blockquote { font-size: 2.4rem; }
+  }
+}

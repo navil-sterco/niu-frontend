@@ -1,0 +1,186 @@
+.pd-page {
+  .prog_sticky {
+    position: sticky;
+    top: calc(var(--pd-sticky-top) + 2rem);
+    align-self: start;
+  }
+  .prog_bx {
+    margin-right: -19.2rem;
+    margin-top: 7.3rem;
+    background-color: var(--color_white);
+    padding-bottom: 4.4rem;
+    position: relative;
+  }
+  .prog_bx:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.4rem;
+    background: linear-gradient(to right, #2f7246 65%, #e8bc42 35%);
+    margin: 0 auto;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  .prog_bx > figure {
+    position: relative;
+  }
+  .prog_bx > figure:before {
+    content: "";
+    position: absolute;
+    background: transparent linear-gradient(180deg, #00000000 0%, #000000 100%)
+      0% 0% no-repeat padding-box;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 23.9rem;
+    pointer-events: none;
+  }
+  .prog_bx > figure figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: 3.5rem;
+    margin-bottom: 2.8rem;
+    margin-right: 9rem;
+  }
+  .prog_bx > figure figcaption p {
+    font: var(--font18);
+    color: var(--color_white);
+    font-weight: var(--font_normal);
+    margin-top: 0.7rem;
+  }
+  .prog_bx > figure figcaption img {
+    max-width: 10.2rem;
+  }
+  .prog_bx_grp {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.6rem;
+  }
+  .prog_bx_grp .prog_list h4 {
+    font: var(--font21);
+    color: var(--color_46);
+    font-weight: var(--font_bold);
+    font-family: var(--dmsans);
+    line-height: 1.4;
+  }
+  .prog_bx_grp .prog_list p {
+    font: var(--font18);
+    font-weight: var(--font_normal);
+    color: var(--color_20);
+    line-height: 1.5;
+  }
+  .prog_bx_grp:not(:last-child) {
+    border-bottom: 2px dashed #c4c4c4;
+    padding-bottom: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+  .prog_bx_contents {
+    padding-block: 4.3rem 2.7rem;
+    padding-inline: 4.5rem 7.3rem;
+  }
+  .prog_bx_grp figure {
+    min-width: 2.4rem;
+  }
+
+  @media (max-width: 1950px) {
+    .prog_bx {
+      margin-right: 0;
+    }
+    .prog_bx_contents {
+      padding-block: 3.3rem 2.7rem;
+      padding-inline: 3.5rem 5.3rem;
+    }
+    .prog_bx_grp:not(:last-child) {
+      padding-bottom: 1.4rem;
+      margin-bottom: 1.4rem;
+    }
+    .prog_bx .sticky_btn {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .prog_bx .sticky_btn .apply-btn,
+    .prog_bx .sticky_btn .down-btn {
+      font: var(--font14);
+      color: var(--color_20);
+      font-weight: var(--font_bold);
+      padding-block: 1rem 1rem;
+      padding-inline: 2rem 2rem;
+    }
+    .prog_bx > figure figcaption {
+      margin-left: 2.5rem;
+      margin-bottom: 1.8rem;
+      margin-right: 2rem;
+    }
+  }
+  @media (max-width: 1750px) {
+    .prog_bx {
+      margin-right: -14rem;
+      position: relative;
+      right: -14rem;
+    }
+    .prog_bx_contents {
+      padding-block: 2.3rem 1.7rem;
+      padding-inline: 2.5rem 3.3rem;
+    }
+    .prog_bx_grp:not(:last-child) {
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+    .prog_bx .sticky_btn .apply-btn,
+    .prog_bx .sticky_btn .down-btn {
+      font: var(--font11);
+      padding-inline: 1rem 1rem;
+    }
+    .sticky_btn .down-btn img {
+      width: 1rem;
+    }
+    .prog_bx .sticky_btn .apply-btn {
+      border: 1px solid var(--color_42);
+    }
+  }
+  @media (max-width: 1440px) {
+    .prog_bx {
+      right: -8rem;
+    }
+  }
+  @media (max-width: 1366px) {
+    .prog_bx {
+      right: -6rem;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .prog_sticky {
+      position: static;
+    }
+    .prog_bx {
+      margin: 3rem 0 0;
+      right: 0;
+      max-width: 48rem;
+    }
+    .prog_bx_contents {
+      padding-block: 3rem 2rem;
+      padding-inline: 3rem;
+    }
+    .prog_bx .sticky_btn {
+      max-width: none;
+      flex-wrap: wrap;
+      padding-inline: 2rem;
+    }
+    .prog_bx .sticky_btn .apply-btn,
+    .prog_bx .sticky_btn .down-btn {
+      font: var(--font16);
+      font-weight: var(--font_bold);
+      padding-inline: 2rem 2rem;
+    }
+    .sticky_btn .down-btn img {
+      width: 1.4rem;
+    }
+    .prog_bx > figure figcaption p {
+      font-size: 1.4rem;
+    }
+  }
+}

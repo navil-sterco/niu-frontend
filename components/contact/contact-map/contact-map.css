@@ -1,0 +1,64 @@
+.cu-page {
+  .map_sec {
+    padding-block: 0 14.6rem;
+    background-color: var(--color_f7);
+    position: relative;
+  }
+  .map_sec:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color_2f);
+    width: 100%;
+    height: 53.5rem;
+    z-index: 1;
+  }
+  .map_sec .top_ttl {
+    margin-bottom: 4rem;
+  }
+  .maps {
+    position: relative;
+    z-index: 2;
+  }
+  .maps iframe {
+    display: block;
+    width: 100%;
+    height: 60rem;
+    border: 0;
+  }
+
+  @media (max-width: 1950px) {
+    .map_sec .top_ttl {
+      margin-bottom: 3rem;
+    }
+  }
+  @media (max-width: 1750px) {
+    .map_sec {
+      padding-block: 0 10rem;
+    }
+    .map_sec:after {
+      height: 48.5rem;
+    }
+    .map_sec .top_ttl {
+      margin-bottom: 2rem;
+    }
+  }
+  @media (max-width: 991px) {
+    .map_sec {
+      padding-block: 0 5rem;
+    }
+    .map_sec:after {
+      height: 28rem;
+    }
+    .maps iframe {
+      height: 45rem;
+    }
+  }
+  @media (max-width: 575px) {
+    .maps iframe {
+      height: 35rem;
+    }
+  }
+}

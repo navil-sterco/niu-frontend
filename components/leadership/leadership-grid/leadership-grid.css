@@ -1,0 +1,18 @@
+.ld-page {
+  .leader_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+    margin-top: 10rem;
+  }
+
+  @media (max-width: 1366px) {
+    .leader_grid { margin-top: 5rem; }
+  }
+  @media (max-width: 991px) {
+    .leader_grid { margin-top: 5rem; }
+  }
+  @media (max-width: 575px) {
+    .leader_grid { grid-template-columns: repeat(2, 1fr); margin-top: 3rem; }
+  }
+}

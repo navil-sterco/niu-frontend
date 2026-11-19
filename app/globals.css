@@ -1,0 +1,244 @@
+@import "tailwindcss";
+
+:root {
+
+  --dmsans: var(--dm-sans), "DM Sans", Arial, Helvetica, sans-serif;
+  --poppins: var(--poppins), "Poppins", Arial, Helvetica, sans-serif;
+  --stack_sans: var(--stack_sans), "Stack Sans Text", Arial, Helvetica, sans-serif;
+  --geist: var(--geist), "Geist", Arial, Helvetica, sans-serif;
+  --roboto: var(--roboto), "Roboto", Arial, Helvetica, sans-serif;
+
+
+  --dmsans: "DM Sans", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --stack_sans: "Stack Sans Text", sans-serif, Arial, Helvetica;
+  --stack_sans: "Stack Sans Text", sans-serif, Arial, Helvetica,;
+  --geist: "Geist", sans-serif;
+  --roboto: "Roboto", sans-serif;
+
+  --root-font: min(0.52083333vw, 10px);
+  --font72: var(--font_normal) 7.2rem/1.29 var(--dmsans);
+  --font64: var(--font_normal) 6.4rem/1.07 var(--dmsans);
+  --font60: var(--font_normal) 6rem/1 var(--poppins);
+  --font56: var(--font_800) 5.6rem/1 var(--poppins);
+  --font53: var(--font_800) 5.3rem/1 var(--dmsans);
+  --font50: var(--font_800) 5rem/1.3 var(--poppins);
+  --font48: var(--font_bold) 4.8rem/1.25 var(--dmsans);
+  --font46: var(--font_medium) 4.6rem/1.3 var(--dmsans);
+  --font42: var(--font_300) 4.2rem/1.23 var(--dmsans);
+  --font45: var(--font_bold) 4.5rem/1.06 var(--dmsans);
+  --font40: var(--font_normal) 4rem/1.06 var(--dmsans);
+  --font36: var(--font_medium) 3.6rem/1.33 var(--dmsans);
+  --font34: var(--font_medium) 3.4rem/1.23 var(--dmsans);
+  --font32: var(--font_200) 3.2rem/1.5 var(--dmsans);
+  --font30: var(--font_normal) 3rem/1.3 var(--dmsans);
+  --font28: var(--font_300) 2.8rem/1.5 var(--dmsans);
+  --font26: var(--font_medium) 2.6rem/1.23 var(--dmsans);
+  --font25: var(--font_medium) 2.5rem/1.52 var(--poppins);
+  --font24: var(--font_normal) 2.4rem/1.29 var(--dmsans);
+  --font21: var(--font_medium) 2.1rem/1.33 var(--poppins);
+  --font20: var(--font_bold) 2rem/1.3 var(--dmsans);
+  --font18: var(--font_600) 1.8rem/1.55 var(--poppins);
+  --font16: var(--font_normal) 1.6rem/1.31 var(--dmsans);
+  --font14: var(--font_normal) 1.4rem/1.28 var(--dmsans);
+  --font13: var(--font_normal) 1.3rem/1.27 var(--dmsans);
+  --font12: var(--font_normal) 1.2rem/1.33 var(--dmsans);
+  --font11: var(--font_medium) 1.1rem/1.27 var(--dmsans);
+
+  --color_black: #000000;
+  --color_white: #fff;
+  --color_ef: #efefef;
+  --color_46: #2f7246;
+  --color_42: #e8bc42;
+  --color_4b: #4b4b4b;
+  --color_36: #1f6336;
+  --color_2c: #17572c;
+  --color_29: #f8dc29;
+  --color_1f: #1d231f;
+  --color_14: #141414;
+  --color_f7: #fbfaf7;
+  --color_24: #00000024;
+  --color_70: #707070;
+  --color_20: #231f20;
+  --color_dc: #dcdcdc;
+  --color_62: #cf1e62;
+  --color_2f: #1b572f;
+  --color_21: #212121;
+  --color_d9: #d9d9d9;
+  --color_cc: #cccccc;
+  --color_f6: #f6f6f6;
+  --color_e5: #e5e5e5;
+  --color_3a: #38423a;
+  --color_66: #666666;
+  --color_2e: #f9ce2e;
+  --color_d8: #d8d8d8;
+  --color_df: #dfdfdf;
+  --color_38: #383838;
+
+  --pd12_left: 12rem;
+  --pd12_right: 12rem;
+
+  --font_normal: normal;
+  --font_medium: 500;
+  --font_bold: bold;
+  --font_900: 900;
+  --font_800: 800;
+  --font_600: 600;
+  --font_500: 500;
+  --font_400: 400;
+  --font_300: 300;
+  --font_200: 200;
+  --max2545: 2550px;
+  --max-1450: calc(100% - ((100% - min(1450px, 75.52083333vw)) / 2));
+  --max-1690: calc(100% - ((100% - min(1690px, 88.02083333vw)) / 2));
+  --max-1930: calc(100% - ((100% - min(1930px, 100.52083333vw)) / 2));
+}
+html {
+  font-size: var(--root-font);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--dmsans);
+  font-weight: var(--font_normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+.container {
+  max-width: min(1450px, 75.52083333vw);
+  width: 100%;
+  padding-inline: 1.5rem;
+}
+.container-md {
+  max-width: min(1690px, 88.02083333vw);
+  width: 100%;
+  padding-inline: 1.5rem;
+}
+.container-lg {
+  max-width: min(1930px, 100.52083333vw);
+  width: 100%;
+  padding-inline: 1.5rem;
+}
+.container-fluid {
+  max-width: 100%;
+  width: 100%;
+  padding-inline: 1.5rem;
+}
+.max-container {
+  max-width: var(--max-1450);
+  margin-inline: auto 0;
+  padding-inline: 1.5rem 0;
+}
+.max-container-md {
+  max-width: var(--max-1690);
+  margin-inline: auto 0;
+  padding-inline: 1.5rem 0;
+}
+.max-container-lg {
+  max-width: var(--max-1930);
+  margin-inline: auto 0;
+  padding-inline: 1.5rem 0;
+}
+
+section {
+  max-width: var(--max2545);
+  margin-inline: auto;
+}
+
+@media (max-width: 1950px) {
+  :root {
+    --root-font: min(0.52083333vw, 9px);
+  }
+}
+
+@media (max-width: 1750px) {
+  :root {
+    --root-font: min(0.73206442vw, 10px);
+    --pd12_left: 4rem;
+    --pd12_right: 8rem;
+  }
+  :root {
+    --font72: var(--font_normal) 4rem/1.29 var(--dmsans);
+    --font64: var(--font_normal) 3.2rem/1.07 var(--dmsans);
+    --font60: var(--font_normal) 3.2rem/1 var(--poppins);
+    --font56: var(--font_800) 2.8rem/1.4 var(--poppins);
+    --font53: var(--font_800) 2.8rem/1 var(--dmsans);
+    --font50: var(--font_800) 3rem/1.3 var(--poppins);
+    --font48: var(--font_bold) 2.8rem/1.25 var(--dmsans);
+    --font46: var(--font_medium) 2.8rem/1.3 var(--dmsans);
+    --font42: var(--font_300) 2.8rem/1.23 var(--dmsans);
+    --font45: var(--font_bold) 2.8rem/1.14 var(--dmsans);
+    --font36: var(--font_medium) 2rem/1.33 var(--dmsans);
+    --font34: var(--font_medium) 1.8rem/1.23 var(--dmsans);
+    --font32: var(--font_200) 1.8rem/1.5 var(--dmsans);
+    --font30: var(--font_normal) 1.8rem/1.3 var(--dmsans);
+    --font28: var(--font_300) 1.8rem/1.5 var(--dmsans);
+    --font26: var(--font_medium) 1.6rem/1.23 var(--dmsans);
+    --font25: var(--font_medium) 1.5rem/1.52 var(--poppins);
+    --font24: var(--font_normal) 1.4rem/1.4 var(--dmsans);
+    --font21: var(--font_medium) 1.6rem/1.33 var(--poppins);
+    --font20: var(--font_bold) 1.6rem/1.3 var(--dmsans);
+    --font14_new: var(--font_normal) 1.4rem/1.3 var(--dmsans);
+    --font18: var(--font_600) 1.3rem/1.4 var(--poppins);
+    --font16: var(--font_normal) 1.3rem/1.3 var(--dmsans);
+    --font14: var(--font_normal) 1.3rem/1.3 var(--dmsans);
+    --font11: var(--font_normal) 1.1rem/1.27 var(--dmsans);
+    --font27: var(--font_normal) 2.7rem/1 var(--dmsans);
+    --mdcon1366: min(1097px, 80.307467vw);
+    --normcon1366: min(935px, 68.4480234vw);
+
+    --max-1450: calc(100% - ((100% - min(935px, 68.4480234vw)) / 2));
+    --max-1690: calc(100% - ((100% - min(1097px, 80.307467vw)) / 2));
+    --max-1930: calc(100% - ((100% - min(1118px, 81.84480234vw)) / 2));
+  }
+  .container {
+    max-width: min(935px, 68.4480234vw);
+    width: 100%;
+    padding-inline: 1.5rem;
+  }
+  .container-md {
+    max-width: min(1097px, 80.307467vw);
+    width: 100%;
+    padding-inline: 1.5rem;
+  }
+  .container-lg {
+    max-width: min(1118px, 81.84480234vw);
+    width: 100%;
+    padding-inline: 1.5rem;
+  }
+  .max-container {
+    max-width: var(--max-1450);
+    margin-inline: auto 0;
+    padding-inline: 1.5rem 0;
+  }
+  .max-container-md {
+    max-width: var(--max-1690);
+    margin-inline: auto 0;
+    padding-inline: 1.5rem 0;
+  }
+  .max-container-lg {
+    max-width: var(--max-1930);
+    margin-inline: auto 0;
+    padding-inline: 1.5rem 0;
+  }
+}
+
+@media (max-width: 991px) {
+  :root {
+    --root-font: 62.5%;
+  }
+}
+
